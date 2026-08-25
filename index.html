@@ -3,85 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thuê căn hộ Tây Mỗ | Nhận danh sách căn trống qua Zalo</title>
-  <meta name="description" content="Nhận danh sách căn hộ đang trống tại phường Tây Mỗ, thành phố Hà Nội theo loại căn và ngân sách. Xem ảnh căn thực tế, giá thuê hiện có và liên hệ qua Zalo.">
-  <meta property="og:title" content="Thuê căn hộ Tây Mỗ – Nhận danh sách căn trống qua Zalo">
-  <meta property="og:description" content="Chọn loại căn và ngân sách. Nhận danh sách căn phù hợp + ảnh + giá qua Zalo.">
-  <meta property="og:image" content="img/hero-desktop.jpg">
+  <title>Thuê căn hộ Tây Mỗ | Xem căn đang trống, ảnh thật & giá thật</title>
+  <meta name="description" content="Xem nhanh căn hộ đang trống tại Tây Mỗ với ảnh thật, giá thuê thực tế và tình trạng nội thất. Chọn căn phù hợp rồi nhận thông tin qua Zalo.">
+  <link rel="canonical" href="https://canhotaymo.com/">
+  <meta property="og:title" content="Thuê căn hộ Tây Mỗ – Xem căn đang trống">
+  <meta property="og:description" content="Ảnh thật · Giá thật · Chọn căn trước, để lại Zalo sau.">
+  <meta property="og:image" content="https://canhotaymo.com/img/hero-desktop.jpg">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://canhotaymo.com/">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
   <style>
     :root{
       --primary:#0b63f6;--primary-dark:#084fc6;--zalo:#0068ff;--success:#15803d;
-      --dark:#121826;--muted:#667085;--light:#f7f9fc;--border:#e4e7ec;--danger:#c0392b;
-      --radius:16px;--shadow:0 14px 45px rgba(16,24,40,.12)
+      --dark:#101828;--muted:#667085;--light:#f7f9fc;--border:#e4e7ec;--soft:#eef4ff;
+      --radius:18px;--shadow:0 14px 42px rgba(16,24,40,.10)
     }
     *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--dark);line-height:1.5;background:#fff;-webkit-font-smoothing:antialiased}
-    img{max-width:100%;height:auto;display:block} a{color:inherit;text-decoration:none}
-    .container{width:100%;max-width:1040px;margin:auto;padding:0 16px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:0;border-radius:12px;padding:14px 18px;font-size:15px;font-weight:800;cursor:pointer;transition:.15s ease;text-align:center}
+    img{max-width:100%;display:block} a{color:inherit;text-decoration:none} button,input,select{font:inherit}
+    .container{width:100%;max-width:1120px;margin:auto;padding:0 16px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:0;border-radius:12px;padding:14px 18px;font-size:15px;font-weight:850;cursor:pointer;transition:.15s ease;text-align:center}
+    .btn:hover{transform:translateY(-1px)}
     .btn-primary{background:var(--primary);color:#fff}.btn-primary:hover{background:var(--primary-dark)}
     .btn-zalo{background:var(--zalo);color:#fff}.btn-zalo:hover{background:#0055d7}
     .btn-light{background:#fff;color:var(--dark);border:1px solid var(--border)}
+    .btn-success{background:var(--success);color:#fff}
+    .section{padding:38px 0}.section.alt{background:var(--light)}
+    .section-title{text-align:center;font-size:25px;line-height:1.2;font-weight:950;letter-spacing:-.35px;margin-bottom:7px}
+    .section-sub{text-align:center;color:var(--muted);font-size:14px;max-width:690px;margin:0 auto 20px}
 
-    /* HERO: conversion first */
-    .hero{position:relative;background:#101828;color:#fff;overflow:hidden}
-    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,15,30,.94) 0%,rgba(8,15,30,.82) 44%,rgba(8,15,30,.42) 100%),url('img/hero-desktop.jpg') center/cover no-repeat}
-    .hero-grid{position:relative;display:grid;grid-template-columns:1fr;gap:22px;padding:28px 0 30px}
-    .eyebrow{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:7px 11px;font-size:12px;font-weight:800;margin-bottom:13px}
-    .hero h1{font-size:30px;line-height:1.16;letter-spacing:-.4px;margin-bottom:11px;font-weight:900}
-    .hero h1 span{color:#9bc2ff}
-    .hero-sub{font-size:15px;color:rgba(255,255,255,.9);max-width:620px;margin-bottom:15px}
-    .hero-points{display:grid;grid-template-columns:1fr;gap:8px;font-size:13px;color:rgba(255,255,255,.93)}
-    .hero-points span{display:flex;gap:8px;align-items:flex-start}
-    .hero-points b{color:#fff}.hero-points small,.trust-item small{display:block;font-size:10.5px;font-weight:500;margin-top:2px}.fee-note{margin-top:12px;font-size:12.5px;color:rgba(255,255,255,.94);font-weight:700}.price-note-hero{margin-top:5px;font-size:11.5px;color:rgba(255,255,255,.72)}
+    .hero{position:relative;overflow:hidden;background:#0d1728;color:#fff}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,14,28,.96) 0%,rgba(7,14,28,.87) 46%,rgba(7,14,28,.38) 100%),url('img/hero-desktop.jpg') center/cover no-repeat}
+    .hero-grid{position:relative;display:grid;grid-template-columns:1fr;gap:20px;padding:30px 0}
+    .eyebrow{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:7px 11px;font-size:12px;font-weight:850;margin-bottom:13px}
+    .hero h1{font-size:32px;line-height:1.12;letter-spacing:-.65px;font-weight:950;margin-bottom:11px}
+    .hero h1 span{color:#9fc5ff}
+    .hero-sub{font-size:15px;color:rgba(255,255,255,.9);max-width:640px;margin-bottom:16px}
+    .hero-price{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 16px}
+    .hero-price span{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);padding:7px 10px;border-radius:9px;font-size:12px;font-weight:800}
+    .hero-actions{display:flex;gap:9px;flex-direction:column}
+    .hero-actions .btn{width:100%}
+    .hero-note{font-size:11.5px;color:rgba(255,255,255,.72);margin-top:10px}
 
-    .lead-card{background:#fff;color:var(--dark);border-radius:20px;padding:20px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.5)}
-    .lead-card h2{font-size:20px;line-height:1.25;font-weight:900;margin-bottom:5px}
-    .lead-card .desc{font-size:13px;color:var(--muted);margin-bottom:15px}
-    .quick-types{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:12px}
-    .type-chip{border:1.5px solid var(--border);background:#fff;border-radius:10px;padding:10px 4px;font-size:13px;font-weight:800;cursor:pointer;color:#344054}
+    .hero-unit{background:#fff;color:var(--dark);border-radius:19px;overflow:hidden;box-shadow:0 18px 52px rgba(0,0,0,.24);border:1px solid rgba(255,255,255,.4)}
+    .hero-unit-img{position:relative;aspect-ratio:16/10;background:#e9eef6;overflow:hidden}
+    .hero-unit-img img{width:100%;height:100%;object-fit:cover}
+    .badge{position:absolute;left:11px;top:11px;background:#fff;color:var(--success);border-radius:999px;padding:6px 9px;font-size:11px;font-weight:900;box-shadow:0 4px 15px rgba(0,0,0,.12)}
+    .hero-unit-body{padding:14px}
+    .hero-unit-top{display:flex;justify-content:space-between;gap:10px;align-items:start}
+    .unit-title{font-size:16px;font-weight:950}.unit-place{font-size:12px;color:var(--muted);margin-top:2px}
+    .unit-price{font-size:17px;font-weight:950;color:var(--primary);white-space:nowrap}
+    .unit-meta{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}
+    .unit-meta span{background:#f2f4f7;border-radius:8px;padding:5px 8px;font-size:11px;color:#475467;font-weight:700}
+    .hero-unit .btn{width:100%;padding:12px}
+
+    .trust{border-bottom:1px solid var(--border);background:#fff}
+    .trust-list{display:grid;grid-template-columns:1fr 1fr;padding:11px 0}
+    .trust-item{text-align:center;padding:8px 7px;font-size:11.5px;color:var(--muted)}
+    .trust-item strong{display:block;color:var(--dark);font-size:13.5px;font-weight:900}
+    .trust-item small{display:block;font-size:10px;margin-top:1px}
+
+    .inventory-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:17px;flex-direction:column}
+    .inventory-head .section-title,.inventory-head .section-sub{text-align:left;margin-left:0;margin-right:0}
+    .inventory-head .section-sub{margin-bottom:0}
+    .filters{display:flex;gap:7px;overflow:auto;width:100%;padding-bottom:2px;scrollbar-width:none}
+    .filters::-webkit-scrollbar{display:none}
+    .filter-btn{white-space:nowrap;border:1px solid var(--border);background:#fff;border-radius:999px;padding:8px 12px;font-size:12px;font-weight:850;color:#475467;cursor:pointer}
+    .filter-btn.active{background:var(--dark);border-color:var(--dark);color:#fff}
+    .inventory-grid{display:grid;grid-template-columns:1fr;gap:14px}
+    .unit-card{border:1px solid var(--border);border-radius:17px;overflow:hidden;background:#fff;box-shadow:0 5px 18px rgba(16,24,40,.05);transition:.15s}
+    .unit-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+    .unit-card[hidden]{display:none}
+    .unit-img{position:relative;aspect-ratio:4/3;background:#eef1f5;overflow:hidden}
+    .unit-img img{width:100%;height:100%;object-fit:cover}
+    .status-badge{position:absolute;left:10px;top:10px;background:#ecfdf3;color:#067647;border:1px solid #abefc6;border-radius:999px;padding:5px 8px;font-size:10.5px;font-weight:900}
+    .status-badge.future{background:#fff8eb;color:#b54708;border-color:#fedf89}
+    .unit-card-body{padding:13px}
+    .unit-card h3{font-size:16px;font-weight:950;line-height:1.25}
+    .unit-card .place{font-size:12px;color:var(--muted);margin-top:2px}
+    .unit-card .price{font-size:19px;line-height:1.2;font-weight:950;color:var(--primary);margin:9px 0 7px}
+    .unit-card .facts{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:11px}
+    .unit-card .facts span{font-size:10.5px;background:#f2f4f7;color:#475467;padding:5px 7px;border-radius:7px;font-weight:700}
+    .unit-card .btn{width:100%;padding:11px 12px;font-size:13px}
+    .inventory-foot{margin-top:17px;padding:16px;border-radius:15px;background:var(--soft);display:flex;gap:12px;align-items:center;justify-content:space-between;flex-direction:column;text-align:center}
+    .inventory-foot strong{font-size:14px}.inventory-foot p{font-size:12px;color:var(--muted);margin-top:2px}
+
+    .benefit-grid{display:grid;grid-template-columns:1fr;gap:10px}
+    .benefit{border:1px solid var(--border);border-radius:15px;padding:15px;background:#fff}
+    .benefit-icon{font-size:21px;margin-bottom:6px}.benefit h3{font-size:14px;font-weight:900;margin-bottom:3px}.benefit p{font-size:12.5px;color:var(--muted)}
+    .mid-cta{border-radius:20px;background:#101828;color:#fff;padding:23px;text-align:center}
+    .mid-cta h2{font-size:22px;line-height:1.2;font-weight:950;margin-bottom:6px}
+    .mid-cta p{font-size:13px;color:rgba(255,255,255,.78);margin-bottom:14px}
+    .mid-actions{display:flex;gap:8px;flex-direction:column}.mid-actions .btn{width:100%}
+
+    footer{background:#101828;color:rgba(255,255,255,.68);padding:28px 0 94px;text-align:center;font-size:12px}
+    footer strong{color:#fff} footer a{color:#a8c8ff}.footer-links{margin-top:10px}
+
+    .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:90;background:#fff;border-top:1px solid var(--border);box-shadow:0 -5px 20px rgba(0,0,0,.08);padding:8px 10px calc(8px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1.35fr .9fr;gap:7px}
+    .sticky-cta .btn{padding:12px 7px;font-size:13px}
+
+    .modal{position:fixed;inset:0;z-index:200;display:none;align-items:flex-end;justify-content:center;background:rgba(16,24,40,.64);padding:0}
+    .modal.open{display:flex}
+    .modal-card{width:100%;max-width:520px;background:#fff;border-radius:20px 20px 0 0;padding:20px;max-height:92vh;overflow:auto;box-shadow:0 -20px 60px rgba(0,0,0,.25)}
+    .modal-head{display:flex;align-items:start;justify-content:space-between;gap:12px;margin-bottom:13px}
+    .modal-head h2{font-size:20px;line-height:1.25;font-weight:950}.modal-head p{font-size:12.5px;color:var(--muted);margin-top:4px}
+    .modal-close{border:0;background:#f2f4f7;width:34px;height:34px;border-radius:50%;font-size:20px;cursor:pointer;color:#475467}
+    .selected-box{display:none;background:#f7f9fc;border:1px solid var(--border);border-radius:12px;padding:10px 11px;margin-bottom:12px;font-size:12px}
+    .selected-box strong{display:block;color:var(--primary);font-size:13px;margin-bottom:2px}
+    .quick-types{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:11px}
+    .type-chip{border:1.5px solid var(--border);background:#fff;border-radius:10px;padding:9px 4px;font-size:12px;font-weight:850;cursor:pointer;color:#344054}
     .type-chip.active{border-color:var(--primary);background:#eef4ff;color:var(--primary)}
-    .form-group{margin-bottom:11px}.form-group label{display:block;font-size:12px;font-weight:800;margin-bottom:5px;color:#344054}
-    .form-group input,.form-group select{width:100%;border:1.5px solid var(--border);border-radius:11px;padding:13px 13px;font-size:15px;background:#fff;color:var(--dark)}
+    .form-group{margin-bottom:10px}.form-group label{display:block;font-size:11.5px;font-weight:850;margin-bottom:5px;color:#344054}
+    .form-group input,.form-group select{width:100%;border:1.5px solid var(--border);border-radius:11px;padding:13px;font-size:15px;background:#fff;color:var(--dark)}
     .form-group input:focus,.form-group select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(11,99,246,.09)}
-    .phone-input{font-size:17px!important;font-weight:700}
-    .btn-submit{width:100%;background:var(--success);color:#fff;padding:15px;font-size:16px;margin-top:2px}.btn-submit:disabled{opacity:.65;cursor:not-allowed}
-    .microcopy{text-align:center;color:var(--muted);font-size:11.5px;margin-top:9px}
-    .or{display:flex;align-items:center;gap:8px;color:#98a2b3;font-size:11px;margin:11px 0}.or:before,.or:after{content:"";height:1px;background:var(--border);flex:1}
-    .zalo-full{width:100%}
-    .form-status{display:none;margin-top:10px;padding:10px;border-radius:10px;text-align:center;font-size:13px;font-weight:700}
+    .phone-input{font-size:17px!important;font-weight:800}
+    .btn-submit{width:100%;padding:15px;font-size:15px}.btn-submit:disabled{opacity:.65;cursor:not-allowed}
+    .microcopy{text-align:center;color:var(--muted);font-size:11px;margin-top:8px}
+    .or{display:flex;align-items:center;gap:8px;color:#98a2b3;font-size:10.5px;margin:10px 0}.or:before,.or:after{content:"";height:1px;background:var(--border);flex:1}
+    .zalo-full{width:100%}.form-status{display:none;margin-top:10px;padding:10px;border-radius:10px;text-align:center;font-size:12.5px;font-weight:750}
 
-    .trust{border-bottom:1px solid var(--border);background:#fff}.trust-list{display:grid;grid-template-columns:1fr 1fr;gap:0;padding:12px 0}
-    .trust-item{padding:8px 10px;text-align:center;font-size:12px;color:var(--muted)}.trust-item strong{display:block;color:var(--dark);font-size:14px}
-
-    .section{padding:34px 0}.section.alt{background:var(--light)}
-    .section-title{text-align:center;font-size:23px;font-weight:900;letter-spacing:-.2px;margin-bottom:6px}.section-sub{text-align:center;color:var(--muted);font-size:14px;margin-bottom:20px}
-
-    .price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}
-    .price-card{border:1px solid var(--border);border-radius:13px;padding:13px;background:#fff;text-align:center;cursor:pointer;transition:.15s}
-    .price-card:hover{border-color:#b9d1ff;transform:translateY(-1px)}
-    .price-card .type{font-size:11px;font-weight:900;color:var(--primary);text-transform:uppercase}.price-card .range{font-size:15px;font-weight:900;margin:4px 0}.price-card .meta{font-size:10.5px;color:var(--muted);line-height:1.35}
-
-    .proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
-    .proof-card{position:relative;border-radius:13px;overflow:hidden;background:#eee;aspect-ratio:4/3}.proof-card img{width:100%;height:100%;object-fit:cover}.proof-card:after{content:"";position:absolute;inset:auto 0 0;height:48%;background:linear-gradient(transparent,rgba(0,0,0,.72))}
-    .proof-caption{position:absolute;left:10px;right:10px;bottom:9px;color:#fff;z-index:2;font-size:12px;font-weight:800}
-    .proof-cta{text-align:center;margin-top:16px}
-
-    .steps{display:grid;grid-template-columns:1fr;gap:10px}.step{display:flex;gap:12px;border:1px solid var(--border);border-radius:14px;padding:14px;background:#fff}.step-num{width:30px;height:30px;min-width:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#eaf2ff;color:var(--primary);font-weight:900}.step h3{font-size:14px;margin-bottom:2px}.step p{font-size:12.5px;color:var(--muted)}
-
-    .mid-cta{border-radius:18px;background:#111827;color:#fff;padding:22px;text-align:center}.mid-cta h2{font-size:21px;font-weight:900;margin-bottom:5px}.mid-cta p{font-size:13px;color:rgba(255,255,255,.78);margin-bottom:14px}.mid-actions{display:flex;gap:8px;flex-direction:column}.mid-actions .btn{width:100%}
-
-    footer{background:#101828;color:rgba(255,255,255,.7);padding:28px 0 100px;text-align:center;font-size:12px}footer strong{color:#fff}footer a{color:#9bc2ff}.footer-links{margin-top:10px}
-
-    .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:100;background:#fff;border-top:1px solid var(--border);box-shadow:0 -5px 20px rgba(0,0,0,.08);padding:9px 10px calc(9px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1.35fr .9fr;gap:7px}.sticky-cta .btn{padding:12px 8px;font-size:13px}
-
-    @media(min-width:720px){
-      .hero-grid{grid-template-columns:1.12fr .88fr;align-items:center;gap:34px;padding:52px 0}.hero h1{font-size:42px}.hero-sub{font-size:17px}.hero-points{grid-template-columns:1fr 1fr}.lead-card{padding:24px}
+    @media(min-width:680px){
+      .hero-actions{flex-direction:row}.hero-actions .btn{width:auto}
+      .inventory-grid{grid-template-columns:repeat(2,1fr)}
+      .benefit-grid{grid-template-columns:repeat(3,1fr)}
+      .inventory-foot{flex-direction:row;text-align:left}
+      .modal{align-items:center;padding:20px}.modal-card{border-radius:20px}
+    }
+    @media(min-width:860px){
+      .hero-grid{grid-template-columns:1.08fr .92fr;align-items:center;gap:36px;padding:48px 0}
+      .hero h1{font-size:45px}.hero-sub{font-size:17px}
       .trust-list{grid-template-columns:repeat(4,1fr)}.trust-item{border-right:1px solid var(--border)}.trust-item:last-child{border-right:0}
-      .price-grid{grid-template-columns:repeat(6,1fr)}.proof-grid{grid-template-columns:repeat(4,1fr)}.steps{grid-template-columns:repeat(3,1fr)}.mid-actions{flex-direction:row;justify-content:center}.mid-actions .btn{width:auto;min-width:190px}.sticky-cta{display:none}footer{padding-bottom:30px}
+      .inventory-head{flex-direction:row}.filters{width:auto}
+      .inventory-grid{grid-template-columns:repeat(3,1fr)}
+      .mid-actions{flex-direction:row;justify-content:center}.mid-actions .btn{width:auto;min-width:205px}
+      .sticky-cta{display:none}footer{padding-bottom:30px}
+    }
+    @media(max-width:560px){
+      .hero:before{background:linear-gradient(180deg,rgba(7,14,28,.93) 0%,rgba(7,14,28,.84) 52%,rgba(7,14,28,.52) 100%),url('img/hero-mobile.jpg') center/cover no-repeat}
     }
   </style>
 </head>
@@ -89,134 +148,189 @@
   <header class="hero">
     <div class="container hero-grid">
       <div>
-        <div class="eyebrow">🏠 QUỸ CĂN PHƯỜNG TÂY MỖ, THÀNH PHỐ HÀ NỘI</div>
-        <h1>Nhận danh sách <span>căn đang trống</span> đúng ngân sách qua Zalo</h1>
-        <p class="hero-sub">Không cần tự lọc hàng trăm tin. Chọn loại căn + để lại số Zalo, bên mình lọc và gửi các lựa chọn phù hợp để anh/chị xem nhanh.</p>
-        <div class="hero-points">
-          <span class="inventory-point">✅ <span><b>Hơn 200 căn đang trống</b><small>Cập nhật 20/08/2026</small></span></span>
-          <span>✅ <b>Ảnh thật – giá thật</b></span>
-          <span>✅ Studio từ <b>5,5 triệu/tháng</b></span>
-          <span>✅ <b>Không thu phí môi giới</b> khách thuê</span>
+        <div class="eyebrow">🏠 CĂN HỘ TÂY MỖ · ẢNH THẬT · GIÁ THẬT</div>
+        <h1>Xem <span>căn đang trống</span> trước, để lại Zalo sau</h1>
+        <p class="hero-sub">Không cần điền form để “xin bảng hàng”. Anh/chị xem trước một số căn thật đang có, thấy căn phù hợp rồi mới để lại số để nhận ảnh, video và lịch xem nhà.</p>
+        <div class="hero-price">
+          <span>Studio từ ~6–8 triệu</span>
+          <span>1PN từ ~7–10 triệu</span>
+          <span>2PN từ ~9–12 triệu</span>
+          <span>3PN từ ~12 triệu</span>
         </div>
-        <p class="fee-note">Bên mình nhận phí môi giới từ chủ nhà. Khách thuê không phải trả thêm bất kỳ khoản phí môi giới nào.</p>
-        <p class="price-note-hero">* Mức giá thấp nhất hiện có, thay đổi theo tòa, diện tích và thời điểm.</p>
+        <div class="hero-actions">
+          <a href="#can-dang-trong" class="btn btn-primary track-inventory">Xem căn đang trống ↓</a>
+          <a href="https://zalo.me/0977923284" target="_blank" rel="noopener" class="btn btn-zalo track-zalo">💬 Nhắn Zalo</a>
+        </div>
+        <p class="hero-note">Khách thuê không mất phí môi giới · Quỹ căn cập nhật hằng ngày.</p>
       </div>
 
-      <div class="lead-card" id="form">
-        <h2>Bạn cần thuê loại căn nào?</h2>
-        <p class="desc">Chọn nhu cầu và để lại số Zalo để nhận danh sách căn phù hợp.</p>
-        <form id="leadForm" novalidate>
-          <input type="text" name="website" id="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;">
-          <input type="hidden" id="type" name="type" value="">
-          <input type="hidden" name="source" value="Google Ads Landing Page">
-          <input type="hidden" name="gclid" id="gclid">
-          <input type="hidden" name="gbraid" id="gbraid">
-          <input type="hidden" name="wbraid" id="wbraid">
-          <input type="hidden" name="utm_source" id="utm_source">
-          <input type="hidden" name="utm_medium" id="utm_medium">
-          <input type="hidden" name="utm_campaign" id="utm_campaign">
-          <input type="hidden" name="utm_term" id="utm_term">
-          <input type="hidden" name="utm_content" id="utm_content">
-          <input type="hidden" name="page_url" id="page_url">
-          <input type="hidden" name="referrer" id="referrer">
-          <input type="hidden" name="user_agent" id="user_agent">
-
-          <div class="quick-types" aria-label="Chọn loại căn">
-            <button type="button" class="type-chip" data-type="Studio">Studio</button>
-            <button type="button" class="type-chip" data-type="1PN">1PN</button>
-            <button type="button" class="type-chip" data-type="1PN+">1PN+</button>
-            <button type="button" class="type-chip" data-type="2PN">2PN</button>
-            <button type="button" class="type-chip" data-type="2PN+">2PN+</button>
-            <button type="button" class="type-chip" data-type="3PN">3PN</button>
+      <article class="hero-unit">
+        <div class="hero-unit-img">
+          <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-2-ngu-sapphire-55m2-ct-2n1-188.webp" alt="Căn 2 phòng ngủ Sapphire Tây Mỗ full nội thất" fetchpriority="high">
+          <span class="badge">● Trống từ hôm nay</span>
+        </div>
+        <div class="hero-unit-body">
+          <div class="hero-unit-top">
+            <div>
+              <div class="unit-title">2PN · 55m² · Full nội thất</div>
+              <div class="unit-place">Sapphire · S205 · Mã CT.2N1.188</div>
+            </div>
+            <div class="unit-price">10 triệu</div>
           </div>
-
-          <div class="form-group">
-            <label for="budget">Ngân sách / tháng</label>
-            <select id="budget" name="budget">
-              <option value="">Chưa chắc / muốn xem nhiều mức</option>
-              <option value="Dưới 7 triệu">Dưới 7 triệu</option>
-              <option value="7-10 triệu">7 – 10 triệu</option>
-              <option value="10-12 triệu">10 – 12 triệu</option>
-              <option value="12-15 triệu">12 – 15 triệu</option>
-              <option value="Trên 15 triệu">Trên 15 triệu</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="phone">Số điện thoại / Zalo *</label>
-            <input class="phone-input" type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="Ví dụ: 09xx xxx xxx" required pattern="[0-9 ]{9,14}">
-          </div>
-          <button type="submit" class="btn btn-submit" id="submitBtn">Nhận danh sách căn phù hợp →</button>
-          <p class="microcopy">🔒 Chỉ dùng số này để gửi căn thuê phù hợp. Không yêu cầu email.</p>
-          <div class="or">hoặc cần gấp</div>
-          <a class="btn btn-zalo zalo-full track-zalo" href="https://zalo.me/0977923284" target="_blank" rel="noopener">💬 Nhắn Zalo trực tiếp</a>
-          <div id="formStatus" class="form-status"></div>
-        </form>
-      </div>
+          <div class="unit-meta"><span>Ảnh thật</span><span>Vào ở được</span><span>Không phí môi giới</span></div>
+          <button class="btn btn-success unit-lead" data-type="2PN" data-budget="7-10 triệu" data-unit="2PN · S205 · 10 triệu · CT.2N1.188">Nhận ảnh + lịch xem căn này →</button>
+        </div>
+      </article>
     </div>
   </header>
 
   <section class="trust">
     <div class="container trust-list">
-      <div class="trust-item"><strong>Hơn 200 căn</strong>đang trống<small>Cập nhật 20/08/2026</small></div>
-      <div class="trust-item"><strong>5,5 triệu/tháng</strong>Studio từ</div>
-      <div class="trust-item"><strong>Studio → 3PN</strong>đủ loại căn</div>
-      <div class="trust-item"><strong>Không thu phí môi giới</strong>với khách thuê</div>
+      <div class="trust-item"><strong>200+ căn</strong>trong quỹ đang theo dõi</div>
+      <div class="trust-item"><strong>Cập nhật mỗi ngày</strong><small class="js-today">Hôm nay</small></div>
+      <div class="trust-item"><strong>Ảnh & giá thực tế</strong>không dùng ảnh phối cảnh</div>
+      <div class="trust-item"><strong>0đ phí môi giới</strong>đối với khách thuê</div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Chọn nhanh theo ngân sách</h2>
-      <p class="section-sub">Bấm loại căn để điền sẵn nhu cầu rồi để lại Zalo</p>
-      <div class="price-grid">
-        <a href="#form" class="price-card select-type" data-type="Studio"><div class="type">Studio</div><div class="range">Từ 5,5 triệu/tháng</div><div class="meta">Mức giá thấp nhất hiện có, thay đổi theo tòa, diện tích và thời điểm.</div></a>
-        <a href="#form" class="price-card select-type" data-type="1PN"><div class="type">1 phòng ngủ</div><div class="range">7–12 triệu/tháng</div><div class="meta">Khoảng giá hiện có, thay đổi theo tòa, diện tích và thời điểm.</div></a>
-        <a href="#form" class="price-card select-type" data-type="1PN+"><div class="type">1PN+</div><div class="range">7–14 triệu/tháng</div><div class="meta">Khoảng giá hiện có, thay đổi theo tòa, diện tích và thời điểm.</div></a>
-        <a href="#form" class="price-card select-type" data-type="2PN"><div class="type">2 phòng ngủ</div><div class="range">8–16 triệu/tháng</div><div class="meta">Khoảng giá hiện có, thay đổi theo tòa, diện tích và thời điểm.</div></a>
-        <a href="#form" class="price-card select-type" data-type="2PN+"><div class="type">2PN+</div><div class="range">9–18 triệu/tháng</div><div class="meta">Khoảng giá hiện có, thay đổi theo tòa, diện tích và thời điểm.</div></a>
-        <a href="#form" class="price-card select-type" data-type="3PN"><div class="type">3 phòng ngủ</div><div class="range">10,5–18 triệu/tháng</div><div class="meta">Khoảng giá hiện có, thay đổi theo tòa, diện tích và thời điểm.</div></a>
-      </div>
-    </div>
-  </section>
+  <main>
+    <section class="section" id="can-dang-trong">
+      <div class="container">
+        <div class="inventory-head">
+          <div>
+            <h2 class="section-title">Căn đang được hỏi nhiều</h2>
+            <p class="section-sub">Một số căn thật lấy trực tiếp từ quỹ hàng đang cập nhật. Bấm đúng căn anh/chị quan tâm để nhận thông tin nhanh.</p>
+          </div>
+          <div class="filters" aria-label="Lọc căn mẫu">
+            <button class="filter-btn active" data-filter="all">Tất cả</button>
+            <button class="filter-btn" data-filter="Studio">Studio</button>
+            <button class="filter-btn" data-filter="1PN">1PN</button>
+            <button class="filter-btn" data-filter="2PN">2PN</button>
+            <button class="filter-btn" data-filter="3PN">3PN</button>
+          </div>
+        </div>
 
-  <section class="section alt">
-    <div class="container">
-      <h2 class="section-title">Ảnh căn thực tế</h2>
-      <p class="section-sub">Một vài hình ảnh từ quỹ căn cho thuê hiện có</p>
-      <div class="proof-grid">
-        <div class="proof-card"><img src="img/phong-khach-01.webp" alt="Căn 2PN · phòng khách" loading="lazy"><div class="proof-caption">Căn 2PN · phòng khách</div></div>
-        <div class="proof-card"><img src="img/can-1pn-01.webp" alt="Căn 1PN · phòng ngủ" loading="lazy"><div class="proof-caption">Căn 1PN · phòng ngủ</div></div>
-        <div class="proof-card"><img src="img/phong-ngu-01.webp" alt="Căn studio · khu bếp" loading="lazy"><div class="proof-caption">Căn studio · khu bếp</div></div>
-        <div class="proof-card"><img src="img/phong-khach-02.webp" alt="Căn 3PN · phòng khách" loading="lazy"><div class="proof-caption">Căn 3PN · phòng khách</div></div>
-      </div>
-      <div class="proof-cta"><a href="#form" class="btn btn-primary">Nhận list căn + ảnh + giá →</a></div>
-    </div>
-  </section>
+        <div class="inventory-grid">
+          <article class="unit-card" data-type="Studio">
+            <div class="unit-img">
+              <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-studio-canopy-29m2-ct-stu-728.webp" alt="Studio Canopy TC1 Tây Mỗ 29m2 full nội thất" loading="lazy">
+              <span class="status-badge future">Trống từ 01/09</span>
+            </div>
+            <div class="unit-card-body">
+              <h3>Studio · 29m²</h3>
+              <div class="place">Canopy · TC1 · CT.Stu.728</div>
+              <div class="price">8 triệu/tháng</div>
+              <div class="facts"><span>Full nội thất</span><span>Ảnh thật</span><span>Studio</span></div>
+              <button class="btn btn-primary unit-lead" data-type="Studio" data-budget="7-10 triệu" data-unit="Studio · TC1 · 8 triệu · CT.Stu.728">Nhận thông tin căn này</button>
+            </div>
+          </article>
 
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Cách nhận căn phù hợp</h2>
-      <p class="section-sub">Không cần gọi nhiều nơi, chỉ cần gửi nhu cầu một lần</p>
-      <div class="steps">
-        <div class="step"><div class="step-num">1</div><div><h3>Chọn loại căn</h3><p>Studio, 1PN, 1PN+, 2PN, 2PN+ hoặc 3PN.</p></div></div>
-        <div class="step"><div class="step-num">2</div><div><h3>Để lại Zalo</h3><p>Chỉ cần số điện thoại/Zalo, không bắt nhập tên hay email.</p></div></div>
-        <div class="step"><div class="step-num">3</div><div><h3>Nhận danh sách</h3><p>Bên mình lọc căn phù hợp rồi gửi ảnh, giá và hỗ trợ xem nhà.</p></div></div>
-      </div>
-    </div>
-  </section>
+          <article class="unit-card" data-type="1PN">
+            <div class="unit-img">
+              <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-1-ngu-sakura-42m2-ct-1n-152.webp" alt="Căn 1 phòng ngủ Sakura SA5 Tây Mỗ 42m2 full nội thất" loading="lazy">
+              <span class="status-badge">Vào ngay</span>
+            </div>
+            <div class="unit-card-body">
+              <h3>1PN · 42m²</h3>
+              <div class="place">Sakura · SA5 · CT.1N.152</div>
+              <div class="price">8,5 triệu/tháng</div>
+              <div class="facts"><span>Full nội thất</span><span>Ảnh thật</span><span>Vào ngay</span></div>
+              <button class="btn btn-primary unit-lead" data-type="1PN" data-budget="7-10 triệu" data-unit="1PN · SA5 · 8,5 triệu · CT.1N.152">Nhận thông tin căn này</button>
+            </div>
+          </article>
 
-  <section class="section alt">
-    <div class="container">
-      <div class="mid-cta">
-        <h2>Muốn xem căn đang trống ngay?</h2>
-        <p>Để lại Zalo để nhận danh sách phù hợp, hoặc nhắn trực tiếp nếu cần gấp.</p>
-        <div class="mid-actions">
-          <a href="#form" class="btn btn-primary">📋 Gửi nhu cầu</a>
-          <a href="https://zalo.me/0977923284" target="_blank" rel="noopener" class="btn btn-zalo track-zalo">💬 Nhắn Zalo ngay</a>
+          <article class="unit-card" data-type="2PN">
+            <div class="unit-img">
+              <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-2-ngu-sapphire-55m2-ct-2n1-187.webp" alt="Căn 2 phòng ngủ Sapphire S105 Tây Mỗ 55m2 full nội thất" loading="lazy">
+              <span class="status-badge">Vào ngay</span>
+            </div>
+            <div class="unit-card-body">
+              <h3>2PN · 55m²</h3>
+              <div class="place">Sapphire · S105 · CT.2N1.187</div>
+              <div class="price">9,5 triệu/tháng</div>
+              <div class="facts"><span>Full nội thất</span><span>Ảnh thật</span><span>Giá tốt</span></div>
+              <button class="btn btn-primary unit-lead" data-type="2PN" data-budget="7-10 triệu" data-unit="2PN · S105 · 9,5 triệu · CT.2N1.187">Nhận thông tin căn này</button>
+            </div>
+          </article>
+
+          <article class="unit-card" data-type="2PN">
+            <div class="unit-img">
+              <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-2-ngu-sakura-54m2-ct-2n2-334.webp" alt="Căn 2 phòng ngủ Sakura SA5 Tây Mỗ 54m2 full nội thất" loading="lazy">
+              <span class="status-badge">Vào ngay</span>
+            </div>
+            <div class="unit-card-body">
+              <h3>2PN · 54m²</h3>
+              <div class="place">Sakura · SA5 · CT.2N2.334</div>
+              <div class="price">11 triệu/tháng</div>
+              <div class="facts"><span>Full nội thất</span><span>Ảnh thật</span><span>Vào ngay</span></div>
+              <button class="btn btn-primary unit-lead" data-type="2PN" data-budget="10-12 triệu" data-unit="2PN · SA5 · 11 triệu · CT.2N2.334">Nhận thông tin căn này</button>
+            </div>
+          </article>
+
+          <article class="unit-card" data-type="2PN">
+            <div class="unit-img">
+              <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-2-ngu-miami-64m2-ct-2n2-317.webp" alt="Căn 2 phòng ngủ Miami GS6 Tây Mỗ 64m2 full nội thất" loading="lazy">
+              <span class="status-badge">Vào ngay</span>
+            </div>
+            <div class="unit-card-body">
+              <h3>2PN · 64m²</h3>
+              <div class="place">Miami · GS6 · CT.2N2.317</div>
+              <div class="price">12 triệu/tháng</div>
+              <div class="facts"><span>Full nội thất</span><span>64m²</span><span>Vào ngay</span></div>
+              <button class="btn btn-primary unit-lead" data-type="2PN" data-budget="10-12 triệu" data-unit="2PN · GS6 · 12 triệu · CT.2N2.317">Nhận thông tin căn này</button>
+            </div>
+          </article>
+
+          <article class="unit-card" data-type="3PN">
+            <div class="unit-img">
+              <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-3-ngu-masteri-79m2-ct-3n-125.webp" alt="Căn 3 phòng ngủ Masteri MasA Tây Mỗ 79m2 full nội thất" loading="lazy">
+              <span class="status-badge">Vào ngay</span>
+            </div>
+            <div class="unit-card-body">
+              <h3>3PN · 79m²</h3>
+              <div class="place">Masteri · MasA · CT.3N.125</div>
+              <div class="price">12,5 triệu/tháng</div>
+              <div class="facts"><span>Full nội thất</span><span>79m²</span><span>Vào ngay</span></div>
+              <button class="btn btn-primary unit-lead" data-type="3PN" data-budget="12-15 triệu" data-unit="3PN · MasA · 12,5 triệu · CT.3N.125">Nhận thông tin căn này</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="inventory-foot">
+          <div>
+            <strong>Chưa thấy căn đúng nhu cầu?</strong>
+            <p>Gửi loại căn + ngân sách, bên mình lọc từ quỹ lớn hơn và gửi các lựa chọn phù hợp.</p>
+          </div>
+          <button class="btn btn-primary general-lead">Nhờ tìm căn phù hợp →</button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2 class="section-title">Vì sao luồng này nhanh hơn?</h2>
+        <p class="section-sub">Không bắt anh/chị để lại số ngay khi vừa vào trang. Xem hàng trước, chọn nhu cầu sau.</p>
+        <div class="benefit-grid">
+          <div class="benefit"><div class="benefit-icon">🏠</div><h3>Thấy căn thật ngay</h3><p>Ảnh, loại căn, tòa, diện tích và giá được đưa lên trước để anh/chị tự loại nhanh.</p></div>
+          <div class="benefit"><div class="benefit-icon">🎯</div><h3>Lead theo đúng căn</h3><p>Khi bấm một căn cụ thể, bên mình biết chính xác căn nào anh/chị đang quan tâm để tư vấn đúng.</p></div>
+          <div class="benefit"><div class="benefit-icon">💬</div><h3>Nhận qua Zalo</h3><p>Chỉ cần số điện thoại/Zalo. Không bắt nhập tên, email hay tạo tài khoản.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="mid-cta">
+          <h2>Cần căn để vào ở sớm?</h2>
+          <p>Nhắn Zalo trực tiếp hoặc để lại ngân sách để bên mình lọc căn còn trống trong ngày.</p>
+          <div class="mid-actions">
+            <button class="btn btn-primary general-lead">📋 Gửi nhu cầu thuê</button>
+            <a href="https://zalo.me/0977923284" target="_blank" rel="noopener" class="btn btn-zalo track-zalo">💬 Nhắn Zalo ngay</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="container">
@@ -225,50 +339,159 @@
       <p style="margin-top:8px">Địa chỉ: Căn S201.0312A, phường Tây Mỗ, thành phố Hà Nội</p>
       <p style="margin-top:5px">Hotline / Zalo: <a class="track-zalo" href="https://zalo.me/0977923284" target="_blank" rel="noopener">0977 923 284</a></p>
       <p style="margin-top:5px">Email: Ductrungtran99@gmail.com</p>
-      
       <div class="footer-links"><a href="/gioi-thieu/">Giới thiệu</a> · <a href="/lien-he/">Liên hệ</a> · <a href="/chinh-sach-quyen-rieng-tu.html">Chính sách quyền riêng tư</a></div>
       <p style="margin-top:12px;opacity:.5">© 2026 · Trần Trung Đức</p>
     </div>
   </footer>
 
   <div class="sticky-cta">
-    <a href="#form" class="btn btn-primary">📋 Nhận danh sách căn</a>
+    <a href="#can-dang-trong" class="btn btn-primary track-inventory">🏠 Xem căn trống</a>
     <a href="https://zalo.me/0977923284" target="_blank" rel="noopener" class="btn btn-zalo track-zalo">💬 Zalo</a>
+  </div>
+
+  <div class="modal" id="leadModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <div>
+          <h2 id="modalTitle">Nhận thông tin căn qua Zalo</h2>
+          <p id="modalDesc">Để lại số Zalo, bên mình gửi ảnh/video và kiểm tra lịch xem căn.</p>
+        </div>
+        <button class="modal-close" id="modalClose" type="button" aria-label="Đóng">×</button>
+      </div>
+
+      <div class="selected-box" id="selectedBox">
+        <strong>Căn anh/chị đang xem</strong>
+        <span id="selectedText"></span>
+      </div>
+
+      <form id="leadForm" novalidate>
+        <input type="text" name="website" id="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;">
+        <input type="hidden" id="type" name="type" value="">
+        <input type="hidden" id="selected_unit" name="selected_unit" value="">
+        <input type="hidden" name="source" value="Google Ads Landing Page V2">
+        <input type="hidden" name="gclid" id="gclid">
+        <input type="hidden" name="gbraid" id="gbraid">
+        <input type="hidden" name="wbraid" id="wbraid">
+        <input type="hidden" name="utm_source" id="utm_source">
+        <input type="hidden" name="utm_medium" id="utm_medium">
+        <input type="hidden" name="utm_campaign" id="utm_campaign">
+        <input type="hidden" name="utm_term" id="utm_term">
+        <input type="hidden" name="utm_content" id="utm_content">
+        <input type="hidden" name="page_url" id="page_url">
+        <input type="hidden" name="referrer" id="referrer">
+        <input type="hidden" name="user_agent" id="user_agent">
+
+        <div class="quick-types" aria-label="Chọn loại căn">
+          <button type="button" class="type-chip" data-type="Studio">Studio</button>
+          <button type="button" class="type-chip" data-type="1PN">1PN</button>
+          <button type="button" class="type-chip" data-type="1PN+">1PN+</button>
+          <button type="button" class="type-chip" data-type="2PN">2PN</button>
+          <button type="button" class="type-chip" data-type="2PN+">2PN+</button>
+          <button type="button" class="type-chip" data-type="3PN">3PN</button>
+        </div>
+
+        <div class="form-group">
+          <label for="budget">Ngân sách / tháng</label>
+          <select id="budget" name="budget">
+            <option value="">Chưa chắc / muốn xem nhiều mức</option>
+            <option value="Dưới 7 triệu">Dưới 7 triệu</option>
+            <option value="7-10 triệu">7 – 10 triệu</option>
+            <option value="10-12 triệu">10 – 12 triệu</option>
+            <option value="12-15 triệu">12 – 15 triệu</option>
+            <option value="Trên 15 triệu">Trên 15 triệu</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="phone">Số điện thoại / Zalo *</label>
+          <input class="phone-input" type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="Ví dụ: 09xx xxx xxx" required pattern="[0-9 ]{9,14}">
+        </div>
+        <button type="submit" class="btn btn-success btn-submit" id="submitBtn">Gửi tôi thông tin căn này →</button>
+        <p class="microcopy">🔒 Chỉ dùng số này để gửi căn thuê phù hợp. Không yêu cầu email.</p>
+        <div class="or">hoặc cần gấp</div>
+        <a class="btn btn-zalo zalo-full track-zalo" href="https://zalo.me/0977923284" target="_blank" rel="noopener">💬 Nhắn Zalo trực tiếp</a>
+        <div id="formStatus" class="form-status"></div>
+      </form>
+    </div>
   </div>
 
   <script>
     const form = document.getElementById('leadForm');
+    const modal = document.getElementById('leadModal');
+    const modalClose = document.getElementById('modalClose');
     const status = document.getElementById('formStatus');
     const submitBtn = document.getElementById('submitBtn');
     const typeInput = document.getElementById('type');
+    const selectedUnitInput = document.getElementById('selected_unit');
+    const selectedBox = document.getElementById('selectedBox');
+    const selectedText = document.getElementById('selectedText');
     const phoneInput = document.getElementById('phone');
+    const budgetInput = document.getElementById('budget');
     const chips = [...document.querySelectorAll('.type-chip')];
+
+    function track(name, params={}){
+      if (typeof window.gtag === 'function') window.gtag('event', name, params);
+    }
+
+    const today = new Date();
+    const todayText = `${String(today.getDate()).padStart(2,'0')}/${String(today.getMonth()+1).padStart(2,'0')}/${today.getFullYear()}`;
+    document.querySelectorAll('.js-today').forEach(el => el.textContent = todayText);
 
     function selectType(type){
       typeInput.value = type || '';
       chips.forEach(c => c.classList.toggle('active', c.dataset.type === type));
     }
 
+    function openLead({type='', budget='', unit=''} = {}){
+      status.style.display = 'none';
+      selectType(type);
+      selectedUnitInput.value = unit;
+      selectedText.textContent = unit;
+      selectedBox.style.display = unit ? 'block' : 'none';
+      budgetInput.value = [...budgetInput.options].some(o => o.value === budget) ? budget : '';
+      document.getElementById('modalTitle').textContent = unit ? 'Nhận thông tin căn qua Zalo' : 'Nhờ tìm căn phù hợp';
+      document.getElementById('modalDesc').textContent = unit ? 'Để lại số Zalo, bên mình gửi thêm ảnh/video và kiểm tra lịch xem căn.' : 'Chọn loại căn + ngân sách, bên mình lọc quỹ đang có và gửi lựa chọn phù hợp.';
+      submitBtn.textContent = unit ? 'Gửi tôi thông tin căn này →' : 'Nhờ tìm căn phù hợp →';
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => phoneInput.focus({preventScroll:true}), 180);
+    }
+
+    function closeLead(){
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.unit-lead').forEach(btn => btn.addEventListener('click', () => {
+      track('unit_lead_click',{unit:btn.dataset.unit,type:btn.dataset.type});
+      openLead({type:btn.dataset.type,budget:btn.dataset.budget,unit:btn.dataset.unit});
+    }));
+    document.querySelectorAll('.general-lead').forEach(btn => btn.addEventListener('click', () => {
+      track('general_lead_click');
+      openLead();
+    }));
     chips.forEach(chip => chip.addEventListener('click', () => selectType(chip.dataset.type)));
-    document.querySelectorAll('.select-type').forEach(card => card.addEventListener('click', () => {
-      selectType(card.dataset.type);
-      setTimeout(() => phoneInput.focus({preventScroll:true}), 450);
+    modalClose.addEventListener('click', closeLead);
+    modal.addEventListener('click', e => { if(e.target === modal) closeLead(); });
+    document.addEventListener('keydown', e => { if(e.key === 'Escape' && modal.classList.contains('open')) closeLead(); });
+
+    const filterBtns = [...document.querySelectorAll('.filter-btn')];
+    const cards = [...document.querySelectorAll('.unit-card')];
+    filterBtns.forEach(btn => btn.addEventListener('click', () => {
+      const value = btn.dataset.filter;
+      filterBtns.forEach(b => b.classList.toggle('active', b === btn));
+      cards.forEach(card => card.hidden = value !== 'all' && card.dataset.type !== value);
+      track('inventory_filter',{type:value});
     }));
 
-    // Clean phone input to improve completion rate while keeping VN formats simple.
+    document.querySelectorAll('.track-zalo').forEach(a => a.addEventListener('click', () => track('zalo_click',{location:'landing_v2'})));
+    document.querySelectorAll('.track-inventory').forEach(a => a.addEventListener('click', () => track('view_inventory_click')));
+
     phoneInput.addEventListener('input', () => {
       phoneInput.value = phoneInput.value.replace(/[^0-9 ]/g,'').slice(0,14);
     });
 
-    // Lightweight hooks for Google Ads / GA4 if gtag is installed later.
-    function track(name, params={}){
-      if (typeof window.gtag === 'function') window.gtag('event', name, params);
-    }
-    document.querySelectorAll('.track-zalo').forEach(a => a.addEventListener('click', () => track('zalo_click', {location:'landing'})));
-
     const GOOGLE_SHEETS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxnhNIFQnwKlsXNGtohOHOx_JxMeYfNnEJGAUq-xumXNJOm2hssIVRnzHuIdTgOz7lX/exec';
 
-    // Giữ lại nguồn quảng cáo để biết lead đến từ campaign/từ khóa nào.
     const params = new URLSearchParams(window.location.search);
     const trackingKeys = ['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
     trackingKeys.forEach(key => {
@@ -283,6 +506,8 @@
 
     form.addEventListener('submit', async function(e){
       e.preventDefault();
+      if(document.getElementById('website').value) return;
+
       const phone = phoneInput.value.replace(/\s+/g,'');
       if(!/^[0-9]{9,11}$/.test(phone)){
         status.style.display = 'block';
@@ -293,8 +518,9 @@
         return;
       }
 
+      const originalLabel = submitBtn.textContent;
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Đang gửi nhu cầu...';
+      submitBtn.textContent = 'Đang gửi...';
       status.style.display = 'none';
 
       try{
@@ -309,18 +535,16 @@
           body:data.toString()
         });
 
-        track('generate_lead',{method:'form',destination:'google_sheet'});
+        track('generate_lead',{method:'form',destination:'google_sheet',selected_unit:selectedUnitInput.value || 'general',type:typeInput.value || 'unspecified'});
         status.style.display = 'block';
         status.style.background = '#ecfdf3';
         status.style.color = '#067647';
-        status.innerHTML = '✅ Đã nhận nhu cầu. Bên mình sẽ gửi căn phù hợp qua Zalo sớm nhất.';
+        status.innerHTML = selectedUnitInput.value ? '✅ Đã nhận. Bên mình sẽ kiểm tra căn này và gửi thông tin qua Zalo sớm nhất.' : '✅ Đã nhận nhu cầu. Bên mình sẽ lọc căn phù hợp và gửi qua Zalo sớm nhất.';
         phoneInput.value = '';
-        document.getElementById('budget').selectedIndex = 0;
-        selectType('');
         submitBtn.textContent = 'Đã gửi thành công ✓';
         setTimeout(() => {
           submitBtn.disabled = false;
-          submitBtn.textContent = 'Nhận danh sách căn phù hợp →';
+          submitBtn.textContent = originalLabel;
         }, 3000);
       }catch(err){
         status.style.display = 'block';
@@ -328,7 +552,7 @@
         status.style.color = '#b42318';
         status.innerHTML = 'Không gửi được form. Anh/chị có thể <a href="https://zalo.me/0977923284" target="_blank" rel="noopener" style="text-decoration:underline;font-weight:900">nhắn Zalo trực tiếp tại đây</a>.';
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Thử gửi lại';
+        submitBtn.textContent = originalLabel;
       }
     });
   </script>
