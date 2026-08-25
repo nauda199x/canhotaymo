@@ -1,2 +1,1 @@
-# canhotaymo
-landifage 
+# canhotaymo.com
