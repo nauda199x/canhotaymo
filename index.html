@@ -17,7 +17,6 @@
       --primary:#0b63f6;--primary-dark:#084fc6;--zalo:#0068ff;--success:#15803d;
       --dark:#101828;--muted:#667085;--light:#f7f9fc;--border:#e4e7ec;--soft:#eef4ff;
       --radius:18px;--shadow:0 16px 44px rgba(16,24,40,.13);
-      --room-sprite:url('img/can-dep-sprite.webp');
     }
     *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
@@ -46,10 +45,14 @@
 
     .conversion-card{background:#fff;color:var(--dark);border-radius:22px;overflow:hidden;box-shadow:0 20px 62px rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.35)}
     .photo-showcase{display:grid;grid-template-columns:1.45fr .75fr;grid-template-rows:1fr 1fr;gap:4px;height:220px;background:#e9eef6;position:relative}
-    .room-sprite{background-image:var(--room-sprite);background-size:300% 200%;background-repeat:no-repeat;background-color:#e9eef6}
-    .room-sprite.s1{background-position:0% 0%}.room-sprite.s2{background-position:50% 0%}.room-sprite.s3{background-position:100% 0%}
-    .room-sprite.s4{background-position:0% 100%}.room-sprite.s5{background-position:50% 100%}.room-sprite.s6{background-position:100% 100%}
-    .photo-showcase .main{grid-row:1/3}.photo-showcase .room-sprite{width:100%;height:100%;background-size:300% 200%}
+    .room-sprite{background-size:cover;background-position:center;background-repeat:no-repeat;background-color:#e9eef6}
+    .room-sprite.s1{background-image:url('img/can-dep-01.svg?v=3')}
+    .room-sprite.s2{background-image:url('img/can-dep-02.svg?v=3')}
+    .room-sprite.s3{background-image:url('img/can-dep-03.svg?v=3')}
+    .room-sprite.s4{background-image:url('img/can-dep-04.svg?v=3')}
+    .room-sprite.s5{background-image:url('img/can-dep-05.svg?v=3')}
+    .room-sprite.s6{background-image:url('img/phong-ngu-01.webp?v=3')}
+    .photo-showcase .main{grid-row:1/3}.photo-showcase .room-sprite{width:100%;height:100%;background-size:cover;background-position:center}
     .photo-tag{position:absolute;left:11px;top:11px;background:rgba(255,255,255,.96);color:#067647;border-radius:999px;padding:6px 9px;font-size:10.5px;font-weight:900;box-shadow:0 4px 15px rgba(0,0,0,.12)}
     .photo-count{position:absolute;right:10px;bottom:10px;background:rgba(16,24,40,.78);color:#fff;border-radius:999px;padding:6px 9px;font-size:10.5px;font-weight:800;backdrop-filter:blur(4px)}
     .lead-card{position:relative;background:#fff;border-top:1px solid #eef1f5;padding:20px}
