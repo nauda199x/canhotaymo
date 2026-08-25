@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thuê căn hộ Tây Mỗ | Xem căn đang trống, ảnh thật & giá thật</title>
-  <meta name="description" content="Xem nhanh căn hộ đang trống tại Tây Mỗ với ảnh thật, giá thuê thực tế và tình trạng nội thất. Chọn căn phù hợp rồi nhận thông tin qua Zalo.">
+  <title>Thuê căn hộ Tây Mỗ | Nhận quỹ căn phù hợp qua Zalo</title>
+  <meta name="description" content="Quỹ căn hộ cho thuê Tây Mỗ với ảnh thật và giá thuê thực tế. Chọn loại căn, ngân sách và nhận các lựa chọn phù hợp qua Zalo. Khách thuê không mất phí môi giới.">
   <link rel="canonical" href="https://canhotaymo.com/">
-  <meta property="og:title" content="Thuê căn hộ Tây Mỗ – Xem căn đang trống">
-  <meta property="og:description" content="Ảnh thật · Giá thật · Chọn căn trước, để lại Zalo sau.">
+  <meta property="og:title" content="Thuê căn hộ Tây Mỗ – Nhận quỹ căn phù hợp qua Zalo">
+  <meta property="og:description" content="200+ căn trong quỹ · Ảnh thật · Giá thực tế · Lọc theo ngân sách qua Zalo.">
   <meta property="og:image" content="https://canhotaymo.com/img/hero-desktop.jpg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://canhotaymo.com/">
@@ -16,102 +16,42 @@
     :root{
       --primary:#0b63f6;--primary-dark:#084fc6;--zalo:#0068ff;--success:#15803d;
       --dark:#101828;--muted:#667085;--light:#f7f9fc;--border:#e4e7ec;--soft:#eef4ff;
-      --radius:18px;--shadow:0 14px 42px rgba(16,24,40,.10)
+      --radius:18px;--shadow:0 16px 44px rgba(16,24,40,.13)
     }
     *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--dark);line-height:1.5;background:#fff;-webkit-font-smoothing:antialiased}
-    img{max-width:100%;display:block} a{color:inherit;text-decoration:none} button,input,select{font:inherit}
+    img{max-width:100%;display:block}a{color:inherit;text-decoration:none}button,input,select{font:inherit}
     .container{width:100%;max-width:1120px;margin:auto;padding:0 16px}
     .btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:0;border-radius:12px;padding:14px 18px;font-size:15px;font-weight:850;cursor:pointer;transition:.15s ease;text-align:center}
     .btn:hover{transform:translateY(-1px)}
     .btn-primary{background:var(--primary);color:#fff}.btn-primary:hover{background:var(--primary-dark)}
     .btn-zalo{background:var(--zalo);color:#fff}.btn-zalo:hover{background:#0055d7}
-    .btn-light{background:#fff;color:var(--dark);border:1px solid var(--border)}
-    .btn-success{background:var(--success);color:#fff}
-    .section{padding:38px 0}.section.alt{background:var(--light)}
-    .section-title{text-align:center;font-size:25px;line-height:1.2;font-weight:950;letter-spacing:-.35px;margin-bottom:7px}
-    .section-sub{text-align:center;color:var(--muted);font-size:14px;max-width:690px;margin:0 auto 20px}
+    .btn-success{background:var(--success);color:#fff}.btn-light{background:#fff;color:var(--dark);border:1px solid var(--border)}
 
     .hero{position:relative;overflow:hidden;background:#0d1728;color:#fff}
-    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,14,28,.96) 0%,rgba(7,14,28,.87) 46%,rgba(7,14,28,.38) 100%),url('img/hero-desktop.jpg') center/cover no-repeat}
-    .hero-grid{position:relative;display:grid;grid-template-columns:1fr;gap:20px;padding:30px 0}
-    .eyebrow{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:7px 11px;font-size:12px;font-weight:850;margin-bottom:13px}
-    .hero h1{font-size:32px;line-height:1.12;letter-spacing:-.65px;font-weight:950;margin-bottom:11px}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,13,27,.97) 0%,rgba(6,13,27,.90) 52%,rgba(6,13,27,.60) 100%),url('img/hero-desktop.jpg') center/cover no-repeat}
+    .hero-grid{position:relative;display:grid;grid-template-columns:1fr;gap:24px;padding:30px 0 34px}
+    .eyebrow{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.17);border-radius:999px;padding:7px 11px;font-size:12px;font-weight:850;margin-bottom:13px}
+    .hero h1{font-size:32px;line-height:1.12;letter-spacing:-.65px;font-weight:950;margin-bottom:12px;max-width:660px}
     .hero h1 span{color:#9fc5ff}
-    .hero-sub{font-size:15px;color:rgba(255,255,255,.9);max-width:640px;margin-bottom:16px}
-    .hero-price{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 16px}
-    .hero-price span{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);padding:7px 10px;border-radius:9px;font-size:12px;font-weight:800}
-    .hero-actions{display:flex;gap:9px;flex-direction:column}
-    .hero-actions .btn{width:100%}
-    .hero-note{font-size:11.5px;color:rgba(255,255,255,.72);margin-top:10px}
+    .hero-sub{font-size:15px;color:rgba(255,255,255,.88);max-width:650px;margin-bottom:16px}
+    .hero-benefits{display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:15px;font-size:13px;color:rgba(255,255,255,.94)}
+    .hero-benefits div{display:flex;gap:8px;align-items:flex-start}
+    .hero-benefits b{color:#fff}
+    .price-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
+    .price-chips span{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.15);border-radius:9px;padding:6px 9px;font-size:11.5px;font-weight:800}
+    .hero-note{font-size:11.5px;color:rgba(255,255,255,.68);margin-top:10px}
 
-    .hero-unit{background:#fff;color:var(--dark);border-radius:19px;overflow:hidden;box-shadow:0 18px 52px rgba(0,0,0,.24);border:1px solid rgba(255,255,255,.4)}
-    .hero-unit-img{position:relative;aspect-ratio:16/10;background:#e9eef6;overflow:hidden}
-    .hero-unit-img img{width:100%;height:100%;object-fit:cover}
-    .badge{position:absolute;left:11px;top:11px;background:#fff;color:var(--success);border-radius:999px;padding:6px 9px;font-size:11px;font-weight:900;box-shadow:0 4px 15px rgba(0,0,0,.12)}
-    .hero-unit-body{padding:14px}
-    .hero-unit-top{display:flex;justify-content:space-between;gap:10px;align-items:start}
-    .unit-title{font-size:16px;font-weight:950}.unit-place{font-size:12px;color:var(--muted);margin-top:2px}
-    .unit-price{font-size:17px;font-weight:950;color:var(--primary);white-space:nowrap}
-    .unit-meta{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}
-    .unit-meta span{background:#f2f4f7;border-radius:8px;padding:5px 8px;font-size:11px;color:#475467;font-weight:700}
-    .hero-unit .btn{width:100%;padding:12px}
-
-    .trust{border-bottom:1px solid var(--border);background:#fff}
-    .trust-list{display:grid;grid-template-columns:1fr 1fr;padding:11px 0}
-    .trust-item{text-align:center;padding:8px 7px;font-size:11.5px;color:var(--muted)}
-    .trust-item strong{display:block;color:var(--dark);font-size:13.5px;font-weight:900}
-    .trust-item small{display:block;font-size:10px;margin-top:1px}
-
-    .inventory-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:17px;flex-direction:column}
-    .inventory-head .section-title,.inventory-head .section-sub{text-align:left;margin-left:0;margin-right:0}
-    .inventory-head .section-sub{margin-bottom:0}
-    .filters{display:flex;gap:7px;overflow:auto;width:100%;padding-bottom:2px;scrollbar-width:none}
-    .filters::-webkit-scrollbar{display:none}
-    .filter-btn{white-space:nowrap;border:1px solid var(--border);background:#fff;border-radius:999px;padding:8px 12px;font-size:12px;font-weight:850;color:#475467;cursor:pointer}
-    .filter-btn.active{background:var(--dark);border-color:var(--dark);color:#fff}
-    .inventory-grid{display:grid;grid-template-columns:1fr;gap:14px}
-    .unit-card{border:1px solid var(--border);border-radius:17px;overflow:hidden;background:#fff;box-shadow:0 5px 18px rgba(16,24,40,.05);transition:.15s}
-    .unit-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-    .unit-card[hidden]{display:none}
-    .unit-img{position:relative;aspect-ratio:4/3;background:#eef1f5;overflow:hidden}
-    .unit-img img{width:100%;height:100%;object-fit:cover}
-    .status-badge{position:absolute;left:10px;top:10px;background:#ecfdf3;color:#067647;border:1px solid #abefc6;border-radius:999px;padding:5px 8px;font-size:10.5px;font-weight:900}
-    .status-badge.future{background:#fff8eb;color:#b54708;border-color:#fedf89}
-    .unit-card-body{padding:13px}
-    .unit-card h3{font-size:16px;font-weight:950;line-height:1.25}
-    .unit-card .place{font-size:12px;color:var(--muted);margin-top:2px}
-    .unit-card .price{font-size:19px;line-height:1.2;font-weight:950;color:var(--primary);margin:9px 0 7px}
-    .unit-card .facts{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:11px}
-    .unit-card .facts span{font-size:10.5px;background:#f2f4f7;color:#475467;padding:5px 7px;border-radius:7px;font-weight:700}
-    .unit-card .btn{width:100%;padding:11px 12px;font-size:13px}
-    .inventory-foot{margin-top:17px;padding:16px;border-radius:15px;background:var(--soft);display:flex;gap:12px;align-items:center;justify-content:space-between;flex-direction:column;text-align:center}
-    .inventory-foot strong{font-size:14px}.inventory-foot p{font-size:12px;color:var(--muted);margin-top:2px}
-
-    .benefit-grid{display:grid;grid-template-columns:1fr;gap:10px}
-    .benefit{border:1px solid var(--border);border-radius:15px;padding:15px;background:#fff}
-    .benefit-icon{font-size:21px;margin-bottom:6px}.benefit h3{font-size:14px;font-weight:900;margin-bottom:3px}.benefit p{font-size:12.5px;color:var(--muted)}
-    .mid-cta{border-radius:20px;background:#101828;color:#fff;padding:23px;text-align:center}
-    .mid-cta h2{font-size:22px;line-height:1.2;font-weight:950;margin-bottom:6px}
-    .mid-cta p{font-size:13px;color:rgba(255,255,255,.78);margin-bottom:14px}
-    .mid-actions{display:flex;gap:8px;flex-direction:column}.mid-actions .btn{width:100%}
-
-    footer{background:#101828;color:rgba(255,255,255,.68);padding:28px 0 94px;text-align:center;font-size:12px}
-    footer strong{color:#fff} footer a{color:#a8c8ff}.footer-links{margin-top:10px}
-
-    .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:90;background:#fff;border-top:1px solid var(--border);box-shadow:0 -5px 20px rgba(0,0,0,.08);padding:8px 10px calc(8px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1.35fr .9fr;gap:7px}
-    .sticky-cta .btn{padding:12px 7px;font-size:13px}
-
-    .modal{position:fixed;inset:0;z-index:200;display:none;align-items:flex-end;justify-content:center;background:rgba(16,24,40,.64);padding:0}
-    .modal.open{display:flex}
-    .modal-card{width:100%;max-width:520px;background:#fff;border-radius:20px 20px 0 0;padding:20px;max-height:92vh;overflow:auto;box-shadow:0 -20px 60px rgba(0,0,0,.25)}
-    .modal-head{display:flex;align-items:start;justify-content:space-between;gap:12px;margin-bottom:13px}
-    .modal-head h2{font-size:20px;line-height:1.25;font-weight:950}.modal-head p{font-size:12.5px;color:var(--muted);margin-top:4px}
-    .modal-close{border:0;background:#f2f4f7;width:34px;height:34px;border-radius:50%;font-size:20px;cursor:pointer;color:#475467}
-    .selected-box{display:none;background:#f7f9fc;border:1px solid var(--border);border-radius:12px;padding:10px 11px;margin-bottom:12px;font-size:12px}
-    .selected-box strong{display:block;color:var(--primary);font-size:13px;margin-bottom:2px}
-    .quick-types{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:11px}
+    .conversion-card{background:#fff;color:var(--dark);border-radius:22px;overflow:hidden;box-shadow:0 20px 62px rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.35)}
+    .photo-showcase{display:grid;grid-template-columns:1.45fr .75fr;grid-template-rows:1fr 1fr;gap:4px;height:220px;background:#e9eef6;position:relative}
+    .photo-showcase .main{grid-row:1/3}.photo-showcase img{width:100%;height:100%;object-fit:cover}
+    .photo-tag{position:absolute;left:11px;top:11px;background:rgba(255,255,255,.96);color:#067647;border-radius:999px;padding:6px 9px;font-size:10.5px;font-weight:900;box-shadow:0 4px 15px rgba(0,0,0,.12)}
+    .photo-count{position:absolute;right:10px;bottom:10px;background:rgba(16,24,40,.78);color:#fff;border-radius:999px;padding:6px 9px;font-size:10.5px;font-weight:800;backdrop-filter:blur(4px)}
+    .lead-card{padding:17px}
+    .lead-card h2{font-size:20px;line-height:1.2;font-weight:950;margin-bottom:4px}
+    .lead-card .desc{font-size:12.5px;color:var(--muted);margin-bottom:12px}
+    .quick-types{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:10px}
     .type-chip{border:1.5px solid var(--border);background:#fff;border-radius:10px;padding:9px 4px;font-size:12px;font-weight:850;cursor:pointer;color:#344054}
     .type-chip.active{border-color:var(--primary);background:#eef4ff;color:var(--primary)}
     .form-group{margin-bottom:10px}.form-group label{display:block;font-size:11.5px;font-weight:850;margin-bottom:5px;color:#344054}
@@ -119,28 +59,45 @@
     .form-group input:focus,.form-group select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(11,99,246,.09)}
     .phone-input{font-size:17px!important;font-weight:800}
     .btn-submit{width:100%;padding:15px;font-size:15px}.btn-submit:disabled{opacity:.65;cursor:not-allowed}
-    .microcopy{text-align:center;color:var(--muted);font-size:11px;margin-top:8px}
+    .microcopy{text-align:center;color:var(--muted);font-size:10.8px;margin-top:8px}
     .or{display:flex;align-items:center;gap:8px;color:#98a2b3;font-size:10.5px;margin:10px 0}.or:before,.or:after{content:"";height:1px;background:var(--border);flex:1}
-    .zalo-full{width:100%}.form-status{display:none;margin-top:10px;padding:10px;border-radius:10px;text-align:center;font-size:12.5px;font-weight:750}
+    .zalo-full{width:100%;padding:12px}.form-status{display:none;margin-top:10px;padding:10px;border-radius:10px;text-align:center;font-size:12.5px;font-weight:750}
+
+    .trust{border-bottom:1px solid var(--border);background:#fff}.trust-list{display:grid;grid-template-columns:1fr 1fr;padding:11px 0}
+    .trust-item{text-align:center;padding:8px 7px;font-size:11.5px;color:var(--muted)}.trust-item strong{display:block;color:var(--dark);font-size:13.5px;font-weight:900}.trust-item small{display:block;font-size:10px;margin-top:1px}
+
+    .section{padding:38px 0}.section.alt{background:var(--light)}
+    .section-title{text-align:center;font-size:25px;line-height:1.2;font-weight:950;letter-spacing:-.35px;margin-bottom:7px}
+    .section-sub{text-align:center;color:var(--muted);font-size:14px;max-width:700px;margin:0 auto 20px}
+
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}
+    .gallery-item{position:relative;border-radius:15px;overflow:hidden;aspect-ratio:4/3;background:#e9eef6;cursor:pointer}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;transition:.2s ease}
+    .gallery-item:hover img{transform:scale(1.025)}
+    .gallery-item:after{content:"";position:absolute;inset:auto 0 0;height:52%;background:linear-gradient(transparent,rgba(0,0,0,.70))}
+    .gallery-caption{position:absolute;left:10px;right:10px;bottom:9px;z-index:2;color:#fff;font-size:12px;font-weight:850}
+    .gallery-lock{position:relative;border-radius:16px;overflow:hidden;margin-top:12px;background:#101828;color:#fff;padding:18px;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-direction:column;text-align:center}
+    .gallery-lock strong{font-size:16px}.gallery-lock p{font-size:12px;color:rgba(255,255,255,.72);margin-top:3px}.gallery-lock .btn{width:100%}
+
+    .why-grid{display:grid;grid-template-columns:1fr;gap:10px}
+    .why-card{border:1px solid var(--border);border-radius:15px;padding:15px;background:#fff}.why-icon{font-size:21px;margin-bottom:6px}.why-card h3{font-size:14px;font-weight:900;margin-bottom:3px}.why-card p{font-size:12.5px;color:var(--muted)}
+
+    .cta-box{border-radius:20px;background:#101828;color:#fff;padding:24px;text-align:center}.cta-box h2{font-size:22px;line-height:1.2;font-weight:950;margin-bottom:6px}.cta-box p{font-size:13px;color:rgba(255,255,255,.76);margin-bottom:14px}.cta-actions{display:flex;gap:8px;flex-direction:column}.cta-actions .btn{width:100%}
+
+    footer{background:#101828;color:rgba(255,255,255,.68);padding:28px 0 94px;text-align:center;font-size:12px}footer strong{color:#fff}footer a{color:#a8c8ff}.footer-links{margin-top:10px}
+    .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:90;background:#fff;border-top:1px solid var(--border);box-shadow:0 -5px 20px rgba(0,0,0,.08);padding:8px 10px calc(8px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1.35fr .9fr;gap:7px}.sticky-cta .btn{padding:12px 7px;font-size:13px}
 
     @media(min-width:680px){
-      .hero-actions{flex-direction:row}.hero-actions .btn{width:auto}
-      .inventory-grid{grid-template-columns:repeat(2,1fr)}
-      .benefit-grid{grid-template-columns:repeat(3,1fr)}
-      .inventory-foot{flex-direction:row;text-align:left}
-      .modal{align-items:center;padding:20px}.modal-card{border-radius:20px}
+      .hero-benefits{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:repeat(3,1fr)}.why-grid{grid-template-columns:repeat(3,1fr)}
+      .gallery-lock{flex-direction:row;text-align:left}.gallery-lock .btn{width:auto;min-width:240px}.cta-actions{flex-direction:row;justify-content:center}.cta-actions .btn{width:auto;min-width:210px}
     }
     @media(min-width:860px){
-      .hero-grid{grid-template-columns:1.08fr .92fr;align-items:center;gap:36px;padding:48px 0}
-      .hero h1{font-size:45px}.hero-sub{font-size:17px}
-      .trust-list{grid-template-columns:repeat(4,1fr)}.trust-item{border-right:1px solid var(--border)}.trust-item:last-child{border-right:0}
-      .inventory-head{flex-direction:row}.filters{width:auto}
-      .inventory-grid{grid-template-columns:repeat(3,1fr)}
-      .mid-actions{flex-direction:row;justify-content:center}.mid-actions .btn{width:auto;min-width:205px}
-      .sticky-cta{display:none}footer{padding-bottom:30px}
+      .hero-grid{grid-template-columns:1.08fr .92fr;align-items:center;gap:38px;padding:48px 0}.hero h1{font-size:45px}.hero-sub{font-size:17px}.photo-showcase{height:235px}
+      .trust-list{grid-template-columns:repeat(4,1fr)}.trust-item{border-right:1px solid var(--border)}.trust-item:last-child{border-right:0}.sticky-cta{display:none}footer{padding-bottom:30px}
     }
     @media(max-width:560px){
-      .hero:before{background:linear-gradient(180deg,rgba(7,14,28,.93) 0%,rgba(7,14,28,.84) 52%,rgba(7,14,28,.52) 100%),url('img/hero-mobile.jpg') center/cover no-repeat}
+      .hero:before{background:linear-gradient(180deg,rgba(6,13,27,.95) 0%,rgba(6,13,27,.88) 55%,rgba(6,13,27,.72) 100%),url('img/hero-mobile.jpg') center/cover no-repeat}
+      .photo-showcase{height:205px}.section{padding:32px 0}
     }
   </style>
 </head>
@@ -148,183 +105,119 @@
   <header class="hero">
     <div class="container hero-grid">
       <div>
-        <div class="eyebrow">🏠 CĂN HỘ TÂY MỖ · ẢNH THẬT · GIÁ THẬT</div>
-        <h1>Xem <span>căn đang trống</span> trước, để lại Zalo sau</h1>
-        <p class="hero-sub">Không cần điền form để “xin bảng hàng”. Anh/chị xem trước một số căn thật đang có, thấy căn phù hợp rồi mới để lại số để nhận ảnh, video và lịch xem nhà.</p>
-        <div class="hero-price">
-          <span>Studio từ ~6–8 triệu</span>
-          <span>1PN từ ~7–10 triệu</span>
-          <span>2PN từ ~9–12 triệu</span>
-          <span>3PN từ ~12 triệu</span>
+        <div class="eyebrow">🏠 QUỸ CĂN CHO THUÊ TÂY MỖ · CẬP NHẬT HẰNG NGÀY</div>
+        <h1>Chọn nhu cầu, nhận <span>5–10 căn phù hợp</span> qua Zalo</h1>
+        <p class="hero-sub">Bên mình có hơn 200 căn trong quỹ theo dõi. Anh/chị chỉ cần chọn loại căn + ngân sách, bên mình lọc những lựa chọn phù hợp và gửi ảnh, giá, tòa qua Zalo để xem nhanh.</p>
+        <div class="hero-benefits">
+          <div>✅ <span><b>Ảnh căn thực tế</b> — xem trước khi đi</span></div>
+          <div>✅ <span><b>Giá thuê thực tế</b> theo từng loại căn</span></div>
+          <div>✅ <span><b>Không mất phí môi giới</b> với khách thuê</span></div>
+          <div>✅ <span><b>Không cần tạo tài khoản</b> hay nhập email</span></div>
         </div>
-        <div class="hero-actions">
-          <a href="#can-dang-trong" class="btn btn-primary track-inventory">Xem căn đang trống ↓</a>
-          <a href="https://zalo.me/0977923284" target="_blank" rel="noopener" class="btn btn-zalo track-zalo">💬 Nhắn Zalo</a>
+        <div class="price-chips">
+          <span>Studio ~6–8 triệu</span><span>1PN ~7–10 triệu</span><span>2PN ~9–12 triệu</span><span>3PN từ ~12 triệu</span>
         </div>
-        <p class="hero-note">Khách thuê không mất phí môi giới · Quỹ căn cập nhật hằng ngày.</p>
+        <p class="hero-note">* Giá thay đổi theo tòa, diện tích, nội thất và thời điểm.</p>
       </div>
 
-      <article class="hero-unit">
-        <div class="hero-unit-img">
-          <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-2-ngu-sapphire-55m2-ct-2n1-188.webp" alt="Căn 2 phòng ngủ Sapphire Tây Mỗ full nội thất" fetchpriority="high">
-          <span class="badge">● Trống từ hôm nay</span>
+      <div class="conversion-card" id="form">
+        <div class="photo-showcase" aria-label="Ảnh căn hộ thực tế trong quỹ">
+          <img class="main" src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-2-ngu-sapphire-55m2-ct-2n1-187.webp" alt="Phòng khách căn hộ 2 phòng ngủ Tây Mỗ" fetchpriority="high">
+          <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-studio-canopy-29m2-ct-stu-728.webp" alt="Căn studio Tây Mỗ full nội thất" fetchpriority="high">
+          <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-3-ngu-masteri-79m2-ct-3n-125.webp" alt="Căn hộ 3 phòng ngủ Tây Mỗ" fetchpriority="high">
+          <span class="photo-tag">● Ảnh thật trong quỹ</span>
+          <span class="photo-count">200+ căn đang theo dõi</span>
         </div>
-        <div class="hero-unit-body">
-          <div class="hero-unit-top">
-            <div>
-              <div class="unit-title">2PN · 55m² · Full nội thất</div>
-              <div class="unit-place">Sapphire · S205 · Mã CT.2N1.188</div>
+        <div class="lead-card">
+          <h2>Anh/chị cần thuê loại căn nào?</h2>
+          <p class="desc">Gửi nhu cầu một lần — bên mình lọc các lựa chọn đúng ngân sách rồi gửi qua Zalo.</p>
+          <form id="leadForm" novalidate>
+            <input type="text" name="website" id="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;">
+            <input type="hidden" id="type" name="type" value="">
+            <input type="hidden" name="source" value="Google Ads Landing Page V2.1">
+            <input type="hidden" name="form_location" value="hero">
+            <input type="hidden" name="gclid" id="gclid"><input type="hidden" name="gbraid" id="gbraid"><input type="hidden" name="wbraid" id="wbraid">
+            <input type="hidden" name="utm_source" id="utm_source"><input type="hidden" name="utm_medium" id="utm_medium"><input type="hidden" name="utm_campaign" id="utm_campaign"><input type="hidden" name="utm_term" id="utm_term"><input type="hidden" name="utm_content" id="utm_content">
+            <input type="hidden" name="page_url" id="page_url"><input type="hidden" name="referrer" id="referrer"><input type="hidden" name="user_agent" id="user_agent">
+
+            <div class="quick-types" aria-label="Chọn loại căn">
+              <button type="button" class="type-chip" data-type="Studio">Studio</button>
+              <button type="button" class="type-chip" data-type="1PN">1PN</button>
+              <button type="button" class="type-chip" data-type="1PN+">1PN+</button>
+              <button type="button" class="type-chip" data-type="2PN">2PN</button>
+              <button type="button" class="type-chip" data-type="2PN+">2PN+</button>
+              <button type="button" class="type-chip" data-type="3PN">3PN</button>
             </div>
-            <div class="unit-price">10 triệu</div>
-          </div>
-          <div class="unit-meta"><span>Ảnh thật</span><span>Vào ở được</span><span>Không phí môi giới</span></div>
-          <button class="btn btn-success unit-lead" data-type="2PN" data-budget="7-10 triệu" data-unit="2PN · S205 · 10 triệu · CT.2N1.188">Nhận ảnh + lịch xem căn này →</button>
+            <div class="form-group">
+              <label for="budget">Ngân sách / tháng</label>
+              <select id="budget" name="budget">
+                <option value="">Chưa chắc / muốn xem nhiều mức</option>
+                <option value="Dưới 7 triệu">Dưới 7 triệu</option><option value="7-10 triệu">7 – 10 triệu</option><option value="10-12 triệu">10 – 12 triệu</option><option value="12-15 triệu">12 – 15 triệu</option><option value="Trên 15 triệu">Trên 15 triệu</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="phone">Số điện thoại / Zalo *</label>
+              <input class="phone-input" type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="Ví dụ: 09xx xxx xxx" required pattern="[0-9 ]{9,14}">
+            </div>
+            <button type="submit" class="btn btn-success btn-submit" id="submitBtn">Nhận 5–10 căn phù hợp qua Zalo →</button>
+            <p class="microcopy">🔒 Thông tin chỉ dùng để hỗ trợ nhu cầu thuê căn hộ.</p>
+            <div class="or">hoặc muốn trao đổi ngay</div>
+            <a class="btn btn-zalo zalo-full track-zalo" href="https://zalo.me/0977923284" target="_blank" rel="noopener">💬 Nhắn Zalo trực tiếp</a>
+            <div id="formStatus" class="form-status"></div>
+          </form>
         </div>
-      </article>
+      </div>
     </div>
   </header>
 
   <section class="trust">
     <div class="container trust-list">
-      <div class="trust-item"><strong>200+ căn</strong>trong quỹ đang theo dõi</div>
-      <div class="trust-item"><strong>Cập nhật mỗi ngày</strong><small class="js-today">Hôm nay</small></div>
-      <div class="trust-item"><strong>Ảnh & giá thực tế</strong>không dùng ảnh phối cảnh</div>
+      <div class="trust-item"><strong>200+ căn</strong>trong quỹ cho thuê</div>
+      <div class="trust-item"><strong>Cập nhật hằng ngày</strong><small class="js-today">Hôm nay</small></div>
+      <div class="trust-item"><strong>Ảnh & giá thực tế</strong>để lọc trước khi xem nhà</div>
       <div class="trust-item"><strong>0đ phí môi giới</strong>đối với khách thuê</div>
     </div>
   </section>
 
   <main>
-    <section class="section" id="can-dang-trong">
+    <section class="section" id="anh-thuc-te">
       <div class="container">
-        <div class="inventory-head">
-          <div>
-            <h2 class="section-title">Căn đang được hỏi nhiều</h2>
-            <p class="section-sub">Một số căn thật lấy trực tiếp từ quỹ hàng đang cập nhật. Bấm đúng căn anh/chị quan tâm để nhận thông tin nhanh.</p>
-          </div>
-          <div class="filters" aria-label="Lọc căn mẫu">
-            <button class="filter-btn active" data-filter="all">Tất cả</button>
-            <button class="filter-btn" data-filter="Studio">Studio</button>
-            <button class="filter-btn" data-filter="1PN">1PN</button>
-            <button class="filter-btn" data-filter="2PN">2PN</button>
-            <button class="filter-btn" data-filter="3PN">3PN</button>
-          </div>
+        <h2 class="section-title">Một vài ảnh thật từ quỹ căn đang có</h2>
+        <p class="section-sub">Đây là ảnh mẫu để anh/chị hình dung chất lượng quỹ căn. Danh sách cụ thể sẽ được lọc theo loại căn và ngân sách trước khi gửi qua Zalo.</p>
+        <div class="gallery">
+          <a href="#form" class="gallery-item track-gallery"><img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-studio-canopy-29m2-ct-stu-728.webp" alt="Studio Tây Mỗ full nội thất" loading="lazy"><div class="gallery-caption">Studio · Full nội thất</div></a>
+          <a href="#form" class="gallery-item track-gallery"><img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-1-ngu-sakura-42m2-ct-1n-152.webp" alt="Căn 1 phòng ngủ Tây Mỗ" loading="lazy"><div class="gallery-caption">1PN · Sáng thoáng</div></a>
+          <a href="#form" class="gallery-item track-gallery"><img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-2-ngu-sapphire-55m2-ct-2n1-187.webp" alt="Căn 2 phòng ngủ Tây Mỗ" loading="lazy"><div class="gallery-caption">2PN · Full nội thất</div></a>
+          <a href="#form" class="gallery-item track-gallery"><img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-2-ngu-sakura-54m2-ct-2n2-334.webp" alt="Căn 2 phòng ngủ Sakura Tây Mỗ" loading="lazy"><div class="gallery-caption">2PN · Nhiều lựa chọn</div></a>
+          <a href="#form" class="gallery-item track-gallery"><img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-2-ngu-miami-64m2-ct-2n2-317.webp" alt="Căn 2 phòng ngủ Miami Tây Mỗ" loading="lazy"><div class="gallery-caption">2PN · Diện tích rộng</div></a>
+          <a href="#form" class="gallery-item track-gallery"><img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-3-ngu-masteri-79m2-ct-3n-125.webp" alt="Căn 3 phòng ngủ Tây Mỗ" loading="lazy"><div class="gallery-caption">3PN · Full nội thất</div></a>
         </div>
-
-        <div class="inventory-grid">
-          <article class="unit-card" data-type="Studio">
-            <div class="unit-img">
-              <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-studio-canopy-29m2-ct-stu-728.webp" alt="Studio Canopy TC1 Tây Mỗ 29m2 full nội thất" loading="lazy">
-              <span class="status-badge future">Trống từ 01/09</span>
-            </div>
-            <div class="unit-card-body">
-              <h3>Studio · 29m²</h3>
-              <div class="place">Canopy · TC1 · CT.Stu.728</div>
-              <div class="price">8 triệu/tháng</div>
-              <div class="facts"><span>Full nội thất</span><span>Ảnh thật</span><span>Studio</span></div>
-              <button class="btn btn-primary unit-lead" data-type="Studio" data-budget="7-10 triệu" data-unit="Studio · TC1 · 8 triệu · CT.Stu.728">Nhận thông tin căn này</button>
-            </div>
-          </article>
-
-          <article class="unit-card" data-type="1PN">
-            <div class="unit-img">
-              <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-1-ngu-sakura-42m2-ct-1n-152.webp" alt="Căn 1 phòng ngủ Sakura SA5 Tây Mỗ 42m2 full nội thất" loading="lazy">
-              <span class="status-badge">Vào ngay</span>
-            </div>
-            <div class="unit-card-body">
-              <h3>1PN · 42m²</h3>
-              <div class="place">Sakura · SA5 · CT.1N.152</div>
-              <div class="price">8,5 triệu/tháng</div>
-              <div class="facts"><span>Full nội thất</span><span>Ảnh thật</span><span>Vào ngay</span></div>
-              <button class="btn btn-primary unit-lead" data-type="1PN" data-budget="7-10 triệu" data-unit="1PN · SA5 · 8,5 triệu · CT.1N.152">Nhận thông tin căn này</button>
-            </div>
-          </article>
-
-          <article class="unit-card" data-type="2PN">
-            <div class="unit-img">
-              <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-2-ngu-sapphire-55m2-ct-2n1-187.webp" alt="Căn 2 phòng ngủ Sapphire S105 Tây Mỗ 55m2 full nội thất" loading="lazy">
-              <span class="status-badge">Vào ngay</span>
-            </div>
-            <div class="unit-card-body">
-              <h3>2PN · 55m²</h3>
-              <div class="place">Sapphire · S105 · CT.2N1.187</div>
-              <div class="price">9,5 triệu/tháng</div>
-              <div class="facts"><span>Full nội thất</span><span>Ảnh thật</span><span>Giá tốt</span></div>
-              <button class="btn btn-primary unit-lead" data-type="2PN" data-budget="7-10 triệu" data-unit="2PN · S105 · 9,5 triệu · CT.2N1.187">Nhận thông tin căn này</button>
-            </div>
-          </article>
-
-          <article class="unit-card" data-type="2PN">
-            <div class="unit-img">
-              <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-2-ngu-sakura-54m2-ct-2n2-334.webp" alt="Căn 2 phòng ngủ Sakura SA5 Tây Mỗ 54m2 full nội thất" loading="lazy">
-              <span class="status-badge">Vào ngay</span>
-            </div>
-            <div class="unit-card-body">
-              <h3>2PN · 54m²</h3>
-              <div class="place">Sakura · SA5 · CT.2N2.334</div>
-              <div class="price">11 triệu/tháng</div>
-              <div class="facts"><span>Full nội thất</span><span>Ảnh thật</span><span>Vào ngay</span></div>
-              <button class="btn btn-primary unit-lead" data-type="2PN" data-budget="10-12 triệu" data-unit="2PN · SA5 · 11 triệu · CT.2N2.334">Nhận thông tin căn này</button>
-            </div>
-          </article>
-
-          <article class="unit-card" data-type="2PN">
-            <div class="unit-img">
-              <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-2-ngu-miami-64m2-ct-2n2-317.webp" alt="Căn 2 phòng ngủ Miami GS6 Tây Mỗ 64m2 full nội thất" loading="lazy">
-              <span class="status-badge">Vào ngay</span>
-            </div>
-            <div class="unit-card-body">
-              <h3>2PN · 64m²</h3>
-              <div class="place">Miami · GS6 · CT.2N2.317</div>
-              <div class="price">12 triệu/tháng</div>
-              <div class="facts"><span>Full nội thất</span><span>64m²</span><span>Vào ngay</span></div>
-              <button class="btn btn-primary unit-lead" data-type="2PN" data-budget="10-12 triệu" data-unit="2PN · GS6 · 12 triệu · CT.2N2.317">Nhận thông tin căn này</button>
-            </div>
-          </article>
-
-          <article class="unit-card" data-type="3PN">
-            <div class="unit-img">
-              <img src="https://timthuesmartcity.com/anh-can-ho/cho-thue-can-ho-3-ngu-masteri-79m2-ct-3n-125.webp" alt="Căn 3 phòng ngủ Masteri MasA Tây Mỗ 79m2 full nội thất" loading="lazy">
-              <span class="status-badge">Vào ngay</span>
-            </div>
-            <div class="unit-card-body">
-              <h3>3PN · 79m²</h3>
-              <div class="place">Masteri · MasA · CT.3N.125</div>
-              <div class="price">12,5 triệu/tháng</div>
-              <div class="facts"><span>Full nội thất</span><span>79m²</span><span>Vào ngay</span></div>
-              <button class="btn btn-primary unit-lead" data-type="3PN" data-budget="12-15 triệu" data-unit="3PN · MasA · 12,5 triệu · CT.3N.125">Nhận thông tin căn này</button>
-            </div>
-          </article>
-        </div>
-
-        <div class="inventory-foot">
-          <div>
-            <strong>Chưa thấy căn đúng nhu cầu?</strong>
-            <p>Gửi loại căn + ngân sách, bên mình lọc từ quỹ lớn hơn và gửi các lựa chọn phù hợp.</p>
-          </div>
-          <button class="btn btn-primary general-lead">Nhờ tìm căn phù hợp →</button>
+        <div class="gallery-lock">
+          <div><strong>Không cần tự xem hàng trăm tin</strong><p>Chọn loại căn + ngân sách, bên mình lọc trước rồi gửi những căn đáng xem nhất qua Zalo.</p></div>
+          <a href="#form" class="btn btn-primary track-lead-cta">Nhận danh sách căn phù hợp →</a>
         </div>
       </div>
     </section>
 
     <section class="section alt">
       <div class="container">
-        <h2 class="section-title">Vì sao luồng này nhanh hơn?</h2>
-        <p class="section-sub">Không bắt anh/chị để lại số ngay khi vừa vào trang. Xem hàng trước, chọn nhu cầu sau.</p>
-        <div class="benefit-grid">
-          <div class="benefit"><div class="benefit-icon">🏠</div><h3>Thấy căn thật ngay</h3><p>Ảnh, loại căn, tòa, diện tích và giá được đưa lên trước để anh/chị tự loại nhanh.</p></div>
-          <div class="benefit"><div class="benefit-icon">🎯</div><h3>Lead theo đúng căn</h3><p>Khi bấm một căn cụ thể, bên mình biết chính xác căn nào anh/chị đang quan tâm để tư vấn đúng.</p></div>
-          <div class="benefit"><div class="benefit-icon">💬</div><h3>Nhận qua Zalo</h3><p>Chỉ cần số điện thoại/Zalo. Không bắt nhập tên, email hay tạo tài khoản.</p></div>
+        <h2 class="section-title">Gửi nhu cầu một lần, nhận đúng nhóm căn cần xem</h2>
+        <p class="section-sub">Landing này không bắt anh/chị tự lọc mã căn. Việc của bên mình là lọc hàng trước để tiết kiệm thời gian cho khách thuê.</p>
+        <div class="why-grid">
+          <div class="why-card"><div class="why-icon">🎯</div><h3>Lọc theo đúng ngân sách</h3><p>Studio, 1PN, 2PN, 3PN — ưu tiên những căn nằm trong mức chi trả anh/chị chọn.</p></div>
+          <div class="why-card"><div class="why-icon">📷</div><h3>Nhận ảnh + giá + tòa</h3><p>Xem nhanh trên Zalo trước, chỉ hẹn xem những căn thực sự phù hợp.</p></div>
+          <div class="why-card"><div class="why-icon">💬</div><h3>Không mất phí môi giới</h3><p>Khách thuê không phải trả thêm phí môi giới cho bên mình.</p></div>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="mid-cta">
-          <h2>Cần căn để vào ở sớm?</h2>
-          <p>Nhắn Zalo trực tiếp hoặc để lại ngân sách để bên mình lọc căn còn trống trong ngày.</p>
-          <div class="mid-actions">
-            <button class="btn btn-primary general-lead">📋 Gửi nhu cầu thuê</button>
+        <div class="cta-box">
+          <h2>Muốn nhận quỹ căn phù hợp ngay?</h2>
+          <p>Chỉ cần loại căn + ngân sách + số Zalo. Không cần tạo tài khoản.</p>
+          <div class="cta-actions">
+            <a href="#form" class="btn btn-primary track-lead-cta">📋 Nhận danh sách căn</a>
             <a href="https://zalo.me/0977923284" target="_blank" rel="noopener" class="btn btn-zalo track-zalo">💬 Nhắn Zalo ngay</a>
           </div>
         </div>
@@ -345,153 +238,43 @@
   </footer>
 
   <div class="sticky-cta">
-    <a href="#can-dang-trong" class="btn btn-primary track-inventory">🏠 Xem căn trống</a>
+    <a href="#form" class="btn btn-primary track-lead-cta">📋 Nhận căn phù hợp</a>
     <a href="https://zalo.me/0977923284" target="_blank" rel="noopener" class="btn btn-zalo track-zalo">💬 Zalo</a>
-  </div>
-
-  <div class="modal" id="leadModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-card">
-      <div class="modal-head">
-        <div>
-          <h2 id="modalTitle">Nhận thông tin căn qua Zalo</h2>
-          <p id="modalDesc">Để lại số Zalo, bên mình gửi ảnh/video và kiểm tra lịch xem căn.</p>
-        </div>
-        <button class="modal-close" id="modalClose" type="button" aria-label="Đóng">×</button>
-      </div>
-
-      <div class="selected-box" id="selectedBox">
-        <strong>Căn anh/chị đang xem</strong>
-        <span id="selectedText"></span>
-      </div>
-
-      <form id="leadForm" novalidate>
-        <input type="text" name="website" id="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;">
-        <input type="hidden" id="type" name="type" value="">
-        <input type="hidden" id="selected_unit" name="selected_unit" value="">
-        <input type="hidden" name="source" value="Google Ads Landing Page V2">
-        <input type="hidden" name="gclid" id="gclid">
-        <input type="hidden" name="gbraid" id="gbraid">
-        <input type="hidden" name="wbraid" id="wbraid">
-        <input type="hidden" name="utm_source" id="utm_source">
-        <input type="hidden" name="utm_medium" id="utm_medium">
-        <input type="hidden" name="utm_campaign" id="utm_campaign">
-        <input type="hidden" name="utm_term" id="utm_term">
-        <input type="hidden" name="utm_content" id="utm_content">
-        <input type="hidden" name="page_url" id="page_url">
-        <input type="hidden" name="referrer" id="referrer">
-        <input type="hidden" name="user_agent" id="user_agent">
-
-        <div class="quick-types" aria-label="Chọn loại căn">
-          <button type="button" class="type-chip" data-type="Studio">Studio</button>
-          <button type="button" class="type-chip" data-type="1PN">1PN</button>
-          <button type="button" class="type-chip" data-type="1PN+">1PN+</button>
-          <button type="button" class="type-chip" data-type="2PN">2PN</button>
-          <button type="button" class="type-chip" data-type="2PN+">2PN+</button>
-          <button type="button" class="type-chip" data-type="3PN">3PN</button>
-        </div>
-
-        <div class="form-group">
-          <label for="budget">Ngân sách / tháng</label>
-          <select id="budget" name="budget">
-            <option value="">Chưa chắc / muốn xem nhiều mức</option>
-            <option value="Dưới 7 triệu">Dưới 7 triệu</option>
-            <option value="7-10 triệu">7 – 10 triệu</option>
-            <option value="10-12 triệu">10 – 12 triệu</option>
-            <option value="12-15 triệu">12 – 15 triệu</option>
-            <option value="Trên 15 triệu">Trên 15 triệu</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="phone">Số điện thoại / Zalo *</label>
-          <input class="phone-input" type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="Ví dụ: 09xx xxx xxx" required pattern="[0-9 ]{9,14}">
-        </div>
-        <button type="submit" class="btn btn-success btn-submit" id="submitBtn">Gửi tôi thông tin căn này →</button>
-        <p class="microcopy">🔒 Chỉ dùng số này để gửi căn thuê phù hợp. Không yêu cầu email.</p>
-        <div class="or">hoặc cần gấp</div>
-        <a class="btn btn-zalo zalo-full track-zalo" href="https://zalo.me/0977923284" target="_blank" rel="noopener">💬 Nhắn Zalo trực tiếp</a>
-        <div id="formStatus" class="form-status"></div>
-      </form>
-    </div>
   </div>
 
   <script>
     const form = document.getElementById('leadForm');
-    const modal = document.getElementById('leadModal');
-    const modalClose = document.getElementById('modalClose');
     const status = document.getElementById('formStatus');
     const submitBtn = document.getElementById('submitBtn');
     const typeInput = document.getElementById('type');
-    const selectedUnitInput = document.getElementById('selected_unit');
-    const selectedBox = document.getElementById('selectedBox');
-    const selectedText = document.getElementById('selectedText');
     const phoneInput = document.getElementById('phone');
-    const budgetInput = document.getElementById('budget');
     const chips = [...document.querySelectorAll('.type-chip')];
 
     function track(name, params={}){
       if (typeof window.gtag === 'function') window.gtag('event', name, params);
     }
+    function selectType(type){
+      typeInput.value = type || '';
+      chips.forEach(c => c.classList.toggle('active', c.dataset.type === type));
+    }
+    chips.forEach(chip => chip.addEventListener('click', () => {
+      selectType(chip.dataset.type);
+      track('type_select',{type:chip.dataset.type});
+    }));
 
     const today = new Date();
     const todayText = `${String(today.getDate()).padStart(2,'0')}/${String(today.getMonth()+1).padStart(2,'0')}/${today.getFullYear()}`;
     document.querySelectorAll('.js-today').forEach(el => el.textContent = todayText);
 
-    function selectType(type){
-      typeInput.value = type || '';
-      chips.forEach(c => c.classList.toggle('active', c.dataset.type === type));
-    }
-
-    function openLead({type='', budget='', unit=''} = {}){
-      status.style.display = 'none';
-      selectType(type);
-      selectedUnitInput.value = unit;
-      selectedText.textContent = unit;
-      selectedBox.style.display = unit ? 'block' : 'none';
-      budgetInput.value = [...budgetInput.options].some(o => o.value === budget) ? budget : '';
-      document.getElementById('modalTitle').textContent = unit ? 'Nhận thông tin căn qua Zalo' : 'Nhờ tìm căn phù hợp';
-      document.getElementById('modalDesc').textContent = unit ? 'Để lại số Zalo, bên mình gửi thêm ảnh/video và kiểm tra lịch xem căn.' : 'Chọn loại căn + ngân sách, bên mình lọc quỹ đang có và gửi lựa chọn phù hợp.';
-      submitBtn.textContent = unit ? 'Gửi tôi thông tin căn này →' : 'Nhờ tìm căn phù hợp →';
-      modal.classList.add('open');
-      document.body.style.overflow = 'hidden';
-      setTimeout(() => phoneInput.focus({preventScroll:true}), 180);
-    }
-
-    function closeLead(){
-      modal.classList.remove('open');
-      document.body.style.overflow = '';
-    }
-
-    document.querySelectorAll('.unit-lead').forEach(btn => btn.addEventListener('click', () => {
-      track('unit_lead_click',{unit:btn.dataset.unit,type:btn.dataset.type});
-      openLead({type:btn.dataset.type,budget:btn.dataset.budget,unit:btn.dataset.unit});
-    }));
-    document.querySelectorAll('.general-lead').forEach(btn => btn.addEventListener('click', () => {
-      track('general_lead_click');
-      openLead();
-    }));
-    chips.forEach(chip => chip.addEventListener('click', () => selectType(chip.dataset.type)));
-    modalClose.addEventListener('click', closeLead);
-    modal.addEventListener('click', e => { if(e.target === modal) closeLead(); });
-    document.addEventListener('keydown', e => { if(e.key === 'Escape' && modal.classList.contains('open')) closeLead(); });
-
-    const filterBtns = [...document.querySelectorAll('.filter-btn')];
-    const cards = [...document.querySelectorAll('.unit-card')];
-    filterBtns.forEach(btn => btn.addEventListener('click', () => {
-      const value = btn.dataset.filter;
-      filterBtns.forEach(b => b.classList.toggle('active', b === btn));
-      cards.forEach(card => card.hidden = value !== 'all' && card.dataset.type !== value);
-      track('inventory_filter',{type:value});
-    }));
-
-    document.querySelectorAll('.track-zalo').forEach(a => a.addEventListener('click', () => track('zalo_click',{location:'landing_v2'})));
-    document.querySelectorAll('.track-inventory').forEach(a => a.addEventListener('click', () => track('view_inventory_click')));
+    document.querySelectorAll('.track-zalo').forEach(a => a.addEventListener('click', () => track('zalo_click',{location:'landing_v21'})));
+    document.querySelectorAll('.track-lead-cta').forEach(a => a.addEventListener('click', () => track('lead_cta_click',{location:'landing_v21'})));
+    document.querySelectorAll('.track-gallery').forEach(a => a.addEventListener('click', () => track('gallery_to_form_click')));
 
     phoneInput.addEventListener('input', () => {
       phoneInput.value = phoneInput.value.replace(/[^0-9 ]/g,'').slice(0,14);
     });
 
     const GOOGLE_SHEETS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxnhNIFQnwKlsXNGtohOHOx_JxMeYfNnEJGAUq-xumXNJOm2hssIVRnzHuIdTgOz7lX/exec';
-
     const params = new URLSearchParams(window.location.search);
     const trackingKeys = ['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
     trackingKeys.forEach(key => {
@@ -507,52 +290,26 @@
     form.addEventListener('submit', async function(e){
       e.preventDefault();
       if(document.getElementById('website').value) return;
-
       const phone = phoneInput.value.replace(/\s+/g,'');
       if(!/^[0-9]{9,11}$/.test(phone)){
-        status.style.display = 'block';
-        status.style.background = '#fff2f0';
-        status.style.color = '#b42318';
-        status.textContent = 'Vui lòng nhập đúng số điện thoại/Zalo (9–11 số).';
-        phoneInput.focus();
-        return;
+        status.style.display = 'block';status.style.background = '#fff2f0';status.style.color = '#b42318';
+        status.textContent = 'Vui lòng nhập đúng số điện thoại/Zalo (9–11 số).';phoneInput.focus();return;
       }
-
       const originalLabel = submitBtn.textContent;
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Đang gửi...';
-      status.style.display = 'none';
-
+      submitBtn.disabled = true;submitBtn.textContent = 'Đang gửi nhu cầu...';status.style.display = 'none';
       try{
         const data = new URLSearchParams(new FormData(form));
-        data.set('phone', phone);
-        data.set('submitted_at_client', new Date().toISOString());
-
-        await fetch(GOOGLE_SHEETS_ENDPOINT,{
-          method:'POST',
-          mode:'no-cors',
-          headers:{'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},
-          body:data.toString()
-        });
-
-        track('generate_lead',{method:'form',destination:'google_sheet',selected_unit:selectedUnitInput.value || 'general',type:typeInput.value || 'unspecified'});
-        status.style.display = 'block';
-        status.style.background = '#ecfdf3';
-        status.style.color = '#067647';
-        status.innerHTML = selectedUnitInput.value ? '✅ Đã nhận. Bên mình sẽ kiểm tra căn này và gửi thông tin qua Zalo sớm nhất.' : '✅ Đã nhận nhu cầu. Bên mình sẽ lọc căn phù hợp và gửi qua Zalo sớm nhất.';
-        phoneInput.value = '';
-        submitBtn.textContent = 'Đã gửi thành công ✓';
-        setTimeout(() => {
-          submitBtn.disabled = false;
-          submitBtn.textContent = originalLabel;
-        }, 3000);
+        data.set('phone', phone);data.set('submitted_at_client', new Date().toISOString());
+        await fetch(GOOGLE_SHEETS_ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},body:data.toString()});
+        track('generate_lead',{method:'form',destination:'google_sheet',type:typeInput.value || 'unspecified'});
+        status.style.display = 'block';status.style.background = '#ecfdf3';status.style.color = '#067647';
+        status.textContent = '✅ Đã nhận nhu cầu. Bên mình sẽ lọc căn phù hợp và gửi qua Zalo sớm nhất.';
+        phoneInput.value = '';document.getElementById('budget').selectedIndex = 0;selectType('');submitBtn.textContent = 'Đã gửi thành công ✓';
+        setTimeout(() => { submitBtn.disabled = false;submitBtn.textContent = originalLabel; }, 3000);
       }catch(err){
-        status.style.display = 'block';
-        status.style.background = '#fff2f0';
-        status.style.color = '#b42318';
+        status.style.display = 'block';status.style.background = '#fff2f0';status.style.color = '#b42318';
         status.innerHTML = 'Không gửi được form. Anh/chị có thể <a href="https://zalo.me/0977923284" target="_blank" rel="noopener" style="text-decoration:underline;font-weight:900">nhắn Zalo trực tiếp tại đây</a>.';
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalLabel;
+        submitBtn.disabled = false;submitBtn.textContent = originalLabel;
       }
     });
   </script>
