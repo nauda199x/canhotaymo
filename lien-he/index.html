@@ -4,10 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Liên hệ | Dịch vụ hỗ trợ tìm thuê căn hộ Tây Mỗ</title>
-  <meta name="description" content="Thông tin liên hệ của dịch vụ hỗ trợ tìm thuê căn hộ tại phường Tây Mỗ, thành phố Hà Nội.">
+  <meta name="description" content="Liên hệ dịch vụ hỗ trợ tìm thuê căn hộ tại Tây Mỗ, Smart City và Đại Mỗ, Hà Nội. Hotline và Zalo 0977 923 284, làm việc từ 07h00 đến 21h00 tất cả các ngày.">
+  <link rel="canonical" href="https://canhotaymo.com/lien-he/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <style>
     :root{--dark:#101828;--muted:#667085;--primary:#0b63f6;--success:#15803d;--border:#e4e7ec;--light:#f7f9fc}
     *{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--dark);line-height:1.6;background:#fff}a{color:var(--primary);text-decoration:none}.container{max-width:760px;margin:0 auto;padding:0 20px}header{background:var(--dark);color:#fff;padding:24px 0;margin-bottom:34px}header a{color:#9bc2ff;font-size:14px}header h1{font-size:26px;margin-top:8px}.info{background:var(--light);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:26px}.info p{margin-bottom:8px}.form-card{border:1px solid var(--border);border-radius:14px;padding:20px}.form-card h2{font-size:20px;margin-bottom:6px}.form-card>p{font-size:14px;color:var(--muted);margin-bottom:16px}.field{margin-bottom:13px}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:5px}.field input{width:100%;padding:12px 13px;border:1px solid var(--border);border-radius:10px;font-size:15px}.btn{width:100%;border:0;border-radius:10px;background:var(--success);color:#fff;padding:13px 16px;font-size:15px;font-weight:800;cursor:pointer}.status{display:none;margin-top:12px;padding:10px;border-radius:10px;font-size:13px}footer{margin-top:44px;border-top:1px solid var(--border);padding:24px 0 40px;font-size:13px;color:var(--muted)}
+  
+    .disclaimer{font-size:13px;line-height:1.6;color:#6b7280;max-width:720px;margin:24px auto 0;padding:16px 20px 0;border-top:1px solid #e4e7ec}
   </style>
 </head>
 <body>
@@ -31,6 +37,9 @@
       <p>Để lại thông tin để bên mình liên hệ lại về nhu cầu thuê căn hộ.</p>
       <input type="hidden" name="type" value="Liên hệ chung">
       <input type="hidden" name="budget" value="">
+      <input type="hidden" name="source" value="Google Ads Landing Page V3">
+      <input type="hidden" name="source_page" value="lien-he">
+      <input type="hidden" name="gclid" id="gclid">
       <div class="field">
         <label for="name">Họ tên</label>
         <input id="name" name="name" type="text" autocomplete="name">
@@ -45,9 +54,16 @@
   </main>
   <footer>
     <div class="container">
-      <a href="/gioi-thieu/">Giới thiệu</a> · <a href="/lien-he/">Liên hệ</a> · <a href="/chinh-sach-quyen-rieng-tu.html">Chính sách quyền riêng tư</a>
+      <a href="/thue-can-ho-smart-city/">Thuê căn hộ Smart City</a> · <a href="/thue-can-ho-tay-mo/">Thuê căn hộ Tây Mỗ</a> · <a href="/thue-can-ho-dai-mo-nam-tu-liem/">Thuê căn hộ Đại Mỗ</a> · <a href="/gioi-thieu/">Giới thiệu</a> · <a href="/lien-he/">Liên hệ</a> · <a href="/dieu-khoan-dich-vu/">Điều khoản dịch vụ</a> · <a href="/chinh-sach-quyen-rieng-tu.html">Chính sách quyền riêng tư</a>
       <p style="margin-top:10px">© 2026 · Trần Trung Đức</p>
     </div>
+      <p class="disclaimer">
+      Đây là website dịch vụ hỗ trợ tìm thuê căn hộ độc lập.
+      Chúng tôi không phải chủ đầu tư, không phải đại lý ủy quyền
+      và không có quan hệ liên kết với Vinhomes, Vingroup hay bất kỳ
+      chủ đầu tư nào. Tên khu đô thị được nhắc đến chỉ nhằm mô tả
+      vị trí của bất động sản cho thuê.
+    </p>
   </footer>
   <script>
     const endpoint='https://script.google.com/macros/s/AKfycbxnhNIFQnwKlsXNGtohOHOx_JxMeYfNnEJGAUq-xumXNJOm2hssIVRnzHuIdTgOz7lX/exec';
@@ -55,6 +71,13 @@
     const phone=document.getElementById('phone');
     const statusBox=document.getElementById('status');
     const button=document.getElementById('submitBtn');
+    // Giữ lại gclid/utm để đối chiếu lead với click quảng cáo
+    const qs=new URLSearchParams(location.search);
+    ['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(k=>{
+      const v=qs.get(k);
+      try{ if(v) localStorage.setItem('lead_'+k,v); }catch(e){}
+    });
+    try{ document.getElementById('gclid').value=qs.get('gclid')||localStorage.getItem('lead_gclid')||''; }catch(e){}
     phone.addEventListener('input',()=>{phone.value=phone.value.replace(/[^0-9 ]/g,'').slice(0,14)});
     form.addEventListener('submit',async(e)=>{
       e.preventDefault();
@@ -66,7 +89,7 @@
       try{
         const data=new URLSearchParams(new FormData(form));data.set('phone',normalized);data.set('page_url',window.location.href);data.set('referrer',document.referrer||'');data.set('user_agent',navigator.userAgent||'');
         await fetch(endpoint,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded;charset=UTF-8'},body:data.toString()});
-        statusBox.style.display='block';statusBox.style.background='#ecfdf3';statusBox.style.color='#067647';statusBox.textContent='Đã nhận yêu cầu liên hệ.';form.reset();
+        window.location.href='/cam-on/';return;
       }catch(err){
         statusBox.style.display='block';statusBox.style.background='#fff2f0';statusBox.style.color='#b42318';statusBox.innerHTML='Không gửi được biểu mẫu. Vui lòng liên hệ qua Zalo: <a href="https://zalo.me/0977923284" target="_blank" rel="noopener">0977 923 284</a>.';
       }finally{button.disabled=false;button.textContent='Gửi yêu cầu'}
