@@ -129,6 +129,7 @@ table.pricing td:first-child{font-weight:850}
 .lock{margin-top:12px;background:#101828;color:#fff;border-radius:16px;padding:18px;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-direction:column;text-align:center}
 .lock strong{font-size:16px}
 .lock p{font-size:12px;color:rgba(255,255,255,.72);margin-top:3px}
+.lock-actions{display:flex;flex-direction:column;gap:8px;width:100%}
 
 /* ---------- Lý do ---------- */
 .why{display:grid;grid-template-columns:1fr;gap:10px}
@@ -163,6 +164,7 @@ footer a{color:#a8c8ff}
   display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:7px;transition:.18s;
 }
 .sticky .btn{min-height:46px;font-size:12.5px;padding:8px 6px;border-radius:11px}
+.sticky.sticky-two{grid-template-columns:1fr 1fr}
 .sticky.hide{transform:translateY(120%);opacity:0;pointer-events:none}
 
 /* ---------- Responsive ---------- */
@@ -174,7 +176,8 @@ footer a{color:#a8c8ff}
   .faq{grid-template-columns:1fr 1fr}
   .areas{grid-template-columns:repeat(3,1fr)}
   .lock{flex-direction:row;text-align:left}
-  .lock .btn{min-width:240px}
+  .lock-actions{width:auto;min-width:270px}
+  .lock-actions .btn{min-width:270px}
   .cta-actions{flex-direction:row;justify-content:center}
   .cta-actions .btn{min-width:200px}
 }
