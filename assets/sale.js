@@ -183,8 +183,12 @@
       }
       if (statusBox) statusBox.style.display = 'none';
 
+      var selectedType = typeInput.value || 'Chưa chọn loại';
+      var selectedArea = area && area.value ? area.value : 'Chưa chọn khu';
       var payload = new URLSearchParams(new FormData(form));
       payload.set('phone', normalized);
+      payload.set('unit_type', selectedType);
+      payload.set('type', 'SMART CITY - Mua bán - ' + selectedArea + ' - ' + selectedType);
       payload.set('intent', 'Mua bán Smart City');
       payload.set('lead_kind', 'buy');
       payload.set('submitted_at_client', new Date().toISOString());
@@ -199,7 +203,7 @@
           method: 'form',
           intent: 'buy',
           destination: 'google_sheet',
-          type: typeInput.value || 'unspecified',
+          type: selectedType,
           budget: budget ? budget.value : '',
           area: area ? area.value : '',
           timeline: timeline ? timeline.value : ''
