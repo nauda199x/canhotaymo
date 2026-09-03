@@ -6,7 +6,7 @@
   var ADS = {
     id: 'AW-18390668698',
     labels: {
-      form: '',
+      form: 'trFUCKC_1uQcEJqrrcFE',
       call: '',
       zalo: ''
     }
