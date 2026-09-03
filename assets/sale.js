@@ -128,7 +128,6 @@
     var phone = form.querySelector('input[type="tel"]');
     var budget = form.querySelector('select[name="budget"]');
     var area = form.querySelector('select[name="area"]');
-    var timeline = form.querySelector('select[name="timeline"]');
     var submitBtn = form.querySelector('button[type="submit"]');
     var statusBox = form.querySelector('.status');
     var typeButtons = Array.prototype.slice.call(form.querySelectorAll('.type'));
@@ -205,8 +204,7 @@
           destination: 'google_sheet',
           type: selectedType,
           budget: budget ? budget.value : '',
-          area: area ? area.value : '',
-          timeline: timeline ? timeline.value : ''
+          area: area ? area.value : ''
         });
         if (submitBtn) submitBtn.textContent = 'Đã gửi thành công ✓';
         location.href = THANK_YOU;
