@@ -7,7 +7,7 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
-# /cam-on/ được loại khỏi chỉ mục bằng thẻ <meta name="robots" content="noindex">
-# nên không chặn ở đây — Google cần vào được trang mới đọc được thẻ đó.
+# Các landing quảng cáo/noindex vẫn phải cho Google crawl để bot đọc được
+# thẻ noindex. Không Disallow chúng trong robots.txt.
 
 Sitemap: https://canhotaymo.com/sitemap.xml
