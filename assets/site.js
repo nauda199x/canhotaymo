@@ -4,6 +4,20 @@
 (function () {
   'use strict';
 
+  /* SEO 06/09/2026 — canhotaymo.com chỉ dùng làm landing page quảng cáo.
+     Không để domain này cạnh tranh organic với timthuesmartcity.com cho cùng
+     intent "thuê căn hộ Smart City". Giữ follow để bot vẫn đi được các link,
+     và KHÔNG chặn robots.txt vì Google cần crawl trang để đọc noindex. */
+  (function markAdsLandingNoindex() {
+    var meta = document.querySelector('meta[name="robots"]');
+    if (!meta) {
+      meta = document.createElement('meta');
+      meta.setAttribute('name', 'robots');
+      document.head.appendChild(meta);
+    }
+    meta.setAttribute('content', 'noindex,follow,max-image-preview:large');
+  })();
+
   /* =======================================================================
      ⚠️ CẦN ĐIỀN — LẤY TỪ GOOGLE ADS
      Mục tiêu → Chuyển đổi → Hành động chuyển đổi → Tạo mới.
